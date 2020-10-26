@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: eureka-client-two #\u6CE8\u518C\u5728eureka\u4E2D\u7684\u670D\u52A1\u540D\u79F0
+    name: eureka-client-two
   jpa:
     show-sql: true
     hibernate:
@@ -27,8 +27,11 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:9993/eureka/
+      defaultZone: http://localhost:9990/eureka/
 
 feign:
   hystrix:
-    enabled: true #fallback\u751F\u6548
+    enabled: false # true:fallback生效
+logging:
+  level:
+    com.ybin.eurekaclienttwo.service.HelloService: debug

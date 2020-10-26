@@ -35,12 +35,13 @@ public class TestController {
     public String index() {
         return helloService.index();
     }
-/*
+
     @RequestMapping(value = "testAll", method = RequestMethod.GET)
+    @ResponseBody
     public String testAll() {
         return "index()->" + helloService.index() + "\n" +
                 "hello1()->" + helloService.hello1("Hello1") + "\n" +
                 "hello2()->" + helloService.hello2("Hello2") + "\n" +
                 "postTest()->" + helloService.postTest("Post Test");
-    }*/
+    }
 }

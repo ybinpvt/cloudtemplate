@@ -25,21 +25,25 @@ public class TestController {
     }
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
+    @ResponseBody
     public String index() {
         return "eureka-client: index();";
     }
 
     @RequestMapping(value = "/hello1", method = RequestMethod.GET)
+    @ResponseBody
     public String hello1(@RequestParam(name = "name") String name) {
         return "eureka-client: hello1, " + name;
     }
 
     @RequestMapping(value = "/hello2", method = RequestMethod.GET)
+    @ResponseBody
     public String hello2(@RequestHeader("name") String name) {
         return "eureka-client: hello2, " + name;
     }
 
     @RequestMapping(value = "postTest", method = RequestMethod.POST)
+    @ResponseBody
     public String postTest(@RequestBody String name) {
         return "eureka-client: postTest, " + name;
     }
