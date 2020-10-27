@@ -13,6 +13,7 @@
         <module>eureka</module>
         <module>eureka-client</module>
         <module>eureka-client-two</module>
+        <module>cas-server</module>
     </modules>
 
 

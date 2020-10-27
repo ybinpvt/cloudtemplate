@@ -1,0 +1,64 @@
+2020-10-26 17:23:24,903 INFO [org.apereo.cas.configuration.DefaultCasConfigurationPropertiesSourceLocator] - <Configuration directory [\etc\cas\config] is not a directory or cannot be found at the specific path>
+2020-10-26 17:23:24,920 INFO [org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration] - <Located property source: CompositePropertySource [name='casCompositePropertySource', propertySources=[PropertiesPropertySource {name='embeddedYamlOverriddenProperties'}]]>
+2020-10-26 17:23:24,931 INFO [org.apereo.cas.web.CasWebApplication] - <The following profiles are active: standalone>
+2020-10-26 17:23:24,988 INFO [org.apereo.cas.web.CasWebApplicationContext] - <Refreshing CasWebApplicationContext()>
+2020-10-26 17:23:29,534 WARN [org.apereo.cas.config.CasCoreTicketsConfiguration] - <Runtime memory is used as the persistence storage for retrieving and managing tickets. Tickets that are issued during runtime will be LOST when the web server is restarted. This MAY impact SSO functionality.>
+2020-10-26 17:23:29,537 INFO [org.apereo.cas.util.CoreTicketUtils] - <Ticket registry encryption/signing is turned off. This MAY NOT be safe in a clustered production environment. Consider using other choices to handle encryption, signing and verification of ticket registry tickets, and verify the chosen ticket registry does support this behavior.>
+2020-10-26 17:23:51,919 INFO [org.apereo.cas.config.CasConfigurationSupportUtilitiesConfiguration] - <CAS is configured to NOT watch configuration directory [\etc\cas\config]. Changes require manual reloads/restarts.>
+2020-10-26 17:23:52,735 WARN [org.apereo.cas.config.support.authentication.AcceptUsersAuthenticationEventExecutionPlanConfiguration] - <[36m>
+2020-10-26 17:23:52,735 WARN [org.apereo.cas.config.support.authentication.AcceptUsersAuthenticationEventExecutionPlanConfiguration] - <
+
+
+  ____ _____ ___  ____  _ 
+ / ___|_   _/ _ \|  _ \| |
+ \___ \ | || | | | |_) | |
+  ___) || || |_| |  __/|_|
+ |____/ |_| \___/|_|   (_)
+                          
+
+CAS is configured to accept a static list of credentials for authentication. While this is generally useful for demo purposes, it is STRONGLY recommended that you DISABLE this authentication method (by setting 'cas.authn.accept.users' to a blank value) and switch to a mode that is more suitable for production.>
+2020-10-26 17:23:52,735 WARN [org.apereo.cas.config.support.authentication.AcceptUsersAuthenticationEventExecutionPlanConfiguration] - <[0m>
+2020-10-26 17:23:58,862 INFO [org.apereo.cas.support.events.listener.CasConfigurationEventListener] - <Refreshing CAS configuration. Stand by...>
+2020-10-26 17:23:58,899 INFO [org.apereo.cas.services.CasServiceRegistryInitializerConfigurationEventListener] - <Refreshing CAS service registry configuration. Stand by...>
+2020-10-26 17:23:58,912 WARN [org.apereo.cas.config.CasCoreServicesConfiguration] - <Runtime memory is used as the persistence storage for retrieving and persisting service definitions. Changes that are made to service definitions during runtime WILL be LOST when the web server is restarted. Ideally for production, you need to choose a storage option (JDBC, etc) to store and track service definitions.>
+2020-10-26 17:23:58,932 INFO [org.apereo.cas.config.CasServiceRegistryInitializationConfiguration] - <Attempting to initialize the service registry [InMemoryServiceRegistry] from service definition resources found at [class path resource [services]]>
+2020-10-26 17:23:58,941 WARN [org.apereo.cas.services.ServiceRegistryInitializer] - <Service registry [InMemoryServiceRegistry] will be auto-initialized from JSON service definitions. This behavior is only useful for testing purposes and MAY NOT be appropriate for production. Consider turning off this behavior via the setting [cas.serviceRegistry.initFromJson=false] and explicitly register definitions in the services registry.>
+2020-10-26 17:23:59,382 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-10-26 17:23:59,407 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-10-26 17:23:59,408 INFO [org.apereo.cas.services.ServiceRegistryInitializer] - <Service registry [InMemoryServiceRegistry] contains [2] service definitions>
+2020-10-26 17:23:59,412 WARN [org.apereo.cas.services.ServiceRegistryInitializer] - <Service registry [InMemoryServiceRegistry] will be auto-initialized from JSON service definitions. This behavior is only useful for testing purposes and MAY NOT be appropriate for production. Consider turning off this behavior via the setting [cas.serviceRegistry.initFromJson=false] and explicitly register definitions in the services registry.>
+2020-10-26 17:23:59,417 WARN [org.apereo.cas.services.ServiceRegistryInitializer] - <Skipping [Apereo] JSON service definition as a matching service [Apereo] is found in the registry>
+2020-10-26 17:23:59,417 WARN [org.apereo.cas.services.ServiceRegistryInitializer] - <Skipping [HTTPS and IMAPS] JSON service definition as a matching service [HTTPS and IMAPS] is found in the registry>
+2020-10-26 17:23:59,417 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-10-26 17:23:59,418 INFO [org.apereo.cas.services.ServiceRegistryInitializer] - <Service registry [InMemoryServiceRegistry] contains [2] service definitions>
+2020-10-26 17:24:00,113 WARN [org.apereo.cas.util.cipher.BaseStringCipherExecutor] - <Secret key for encryption is not defined for [Ticket-granting Cookie]; CAS will attempt to auto-generate the encryption key>
+2020-10-26 17:24:00,132 WARN [org.apereo.cas.util.cipher.BaseStringCipherExecutor] - <Generated encryption key [bLdrvP2688OBKc--pbvsmNv97Y99zFj61AZqmwkVci0] of size [256] for [Ticket-granting Cookie]. The generated key MUST be added to CAS settings under setting [cas.tgc.crypto.encryption.key].>
+2020-10-26 17:24:00,137 WARN [org.apereo.cas.util.cipher.BaseStringCipherExecutor] - <Secret key for signing is not defined for [Ticket-granting Cookie]. CAS will attempt to auto-generate the signing key>
+2020-10-26 17:24:00,138 WARN [org.apereo.cas.util.cipher.BaseStringCipherExecutor] - <Generated signing key [VCX8Ur0MqRHs0gn9bZ_K_3ryM-1K6qcvGwF-WGRSF9ZonQ-l9xeTyekGJtP-Ikr-sFIgs8-0mODrBXs_W0OFXw] of size [512] for [Ticket-granting Cookie]. The generated key MUST be added to CAS settings under setting [cas.tgc.crypto.signing.key].>
+2020-10-26 17:24:00,715 WARN [org.apereo.cas.util.cipher.BaseBinaryCipherExecutor] - <Secret key for signing is not defined under [cas.webflow.crypto.signing.key]. CAS will attempt to auto-generate the signing key>
+2020-10-26 17:24:00,716 WARN [org.apereo.cas.util.cipher.BaseBinaryCipherExecutor] - <Generated signing key [HOJUA296s1h9YSyzore2otHB5egZ_g9gB9eOhmJki9x-R9xtEe49EUhbNGcSiU642KTI-01eEm5oIMYy2j1ZbQ] of size [512]. The generated key MUST be added to CAS settings under setting [cas.webflow.crypto.signing.key].>
+2020-10-26 17:24:00,717 WARN [org.apereo.cas.util.cipher.BaseBinaryCipherExecutor] - <Secret key for encryption is not defined under [cas.webflow.crypto.encryption.key]. CAS will attempt to auto-generate the encryption key>
+2020-10-26 17:24:00,720 WARN [org.apereo.cas.util.cipher.BaseBinaryCipherExecutor] - <Generated encryption key [Nz9IdsI2gh-McZDGW7LEkQ] of size [16]. The generated key MUST be added to CAS settings under setting [cas.webflow.crypto.encryption.key].>
+2020-10-26 17:24:01,019 INFO [org.apereo.cas.support.events.listener.DefaultCasEventListener] - <[36m>
+2020-10-26 17:24:01,020 INFO [org.apereo.cas.support.events.listener.DefaultCasEventListener] - <
+
+
+  ____  _____    _    ______   __
+ |  _ \| ____|  / \  |  _ \ \ / /
+ | |_) |  _|   / _ \ | | | \ V / 
+ |  _ <| |___ / ___ \| |_| || |  
+ |_| \_\_____/_/   \_\____/ |_|  
+                                 
+>
+2020-10-26 17:24:01,020 INFO [org.apereo.cas.support.events.listener.DefaultCasEventListener] - <[0m>
+2020-10-26 17:24:01,020 INFO [org.apereo.cas.support.events.listener.DefaultCasEventListener] - <Ready to process requests @ [2020-10-26T09:24:01.019Z]>
+2020-10-26 17:24:01,022 INFO [org.apereo.cas.web.CasWebApplication] - <Started CasWebApplication in 41.383 seconds (JVM running for 45.61)>
+2020-10-26 17:24:20,876 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-10-26 17:24:30,928 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-10-26 17:25:20,881 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-10-26 17:26:20,884 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-10-26 17:26:30,933 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-10-26 17:27:20,887 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-10-26 17:28:20,890 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-10-26 17:28:30,935 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-10-26 17:29:13,701 INFO [org.apereo.cas.web.CasWebApplicationContext] - <Closing CasWebApplicationContext()>

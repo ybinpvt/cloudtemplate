@@ -9,12 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-client" />
         <module name="eureka-client-two" />
+        <module name="cas-server" />
         <module name="eureka" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cas-server" options="" />
       <module name="eureka" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-client-two" options="-parameters" />
