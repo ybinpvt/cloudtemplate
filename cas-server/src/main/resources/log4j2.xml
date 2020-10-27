@@ -70,6 +70,9 @@
         </CasAppender>
     </Appenders>
     <Loggers>
+        <AsyncLogger name="com.ybin.casserver.custom.CustomPasswordEncoder" level="info" includeLocation="true">
+            <AppenderRef ref="casConsole"/>
+        </AsyncLogger>
         <AsyncLogger name="com.couchbase" level="off" additivity="false" includeLocation="true">
             <AppenderRef ref="casConsole"/>
             <AppenderRef ref="casFile"/>
