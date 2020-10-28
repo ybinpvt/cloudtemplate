@@ -86,6 +86,13 @@
             <version>2.3.2.RELEASE</version>
         </dependency>
 
+        <!-- fastJson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.57</version>
+        </dependency>
+
         <!--test-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -166,6 +173,7 @@
     <properties>
         <cas.version>5.3.14</cas.version>
         <springboot.version>1.5.18.RELEASE</springboot.version>
+        <!--<springboot.version>2.3.2.RELEASE</springboot.version>-->
         <!-- app.server could be -jetty, -undertow, -tomcat, or blank if you plan to provide appserver -->
         <app.server>-tomcat</app.server>
 
