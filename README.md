@@ -4,7 +4,7 @@
 
 2、**eureka-client-one**： eureka客户端1——提供服务
 
-3、**eureka-client-two**： eureka客户端2——调用eureka-client的服务
+3、**eureka-client-two**： eureka客户端2——feign调用
 
 4、**cas-server**：cas单点登录认证服务器
 

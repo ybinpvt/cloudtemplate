@@ -15,6 +15,7 @@
         <module>eureka-client-two</module>
         <module>cas-server</module>
         <module>cas-client-one</module>
+        <module>cas-client-two</module>
     </modules>
 
 
