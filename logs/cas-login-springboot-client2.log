@@ -1,0 +1,169 @@
+2020/10/29 17:24:08.265 c.y.c.CasClientSpringBootApplication [] INFO  Starting CasClientSpringBootApplication on DESKTOP-7UAOHGE with PID 14976 (C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot\target\classes started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate)
+2020/10/29 17:24:08.267 c.y.c.CasClientSpringBootApplication [] INFO  No active profile set, falling back to default profiles: default
+2020/10/29 17:24:09.232 o.s.d.r.c.RepositoryConfigurationDelegate [] INFO  Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020/10/29 17:24:09.258 o.s.d.r.c.RepositoryConfigurationDelegate [] INFO  Finished Spring Data repository scanning in 12ms. Found 0 JPA repository interfaces.
+2020/10/29 17:24:09.414 o.s.boot.SpringApplication [] ERROR Application run failed
+java.lang.IllegalStateException: Cannot load configuration class: com.github.yjgbg.jpa.plus.JpaPlusSupport
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:257)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:291)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ybin.casclientspringboot.CasClientSpringBootApplication.main(CasClientSpringBootApplication.java:12)
+Caused by: java.lang.UnsupportedClassVersionError: com/github/yjgbg/jpa/plus/JpaPlusSupport has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:469)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:389)
+	... 13 common frames omitted
+2020/10/29 17:24:09.420 o.s.boot.SpringApplication [] WARN  Unable to close ApplicationContext
+org.springframework.beans.factory.CannotLoadBeanClassException: Error loading class [com.github.yjgbg.jpa.plus.JpaPlusSupport] for bean with name 'com.github.yjgbg.jpa.plus.JpaPlusSupport': problem with class file or dependent class; nested exception is java.lang.UnsupportedClassVersionError: com/github/yjgbg/jpa/plus/JpaPlusSupport has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1489)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:648)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1614)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1243)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:880)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:868)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:855)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:806)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ybin.casclientspringboot.CasClientSpringBootApplication.main(CasClientSpringBootApplication.java:12)
+Caused by: java.lang.UnsupportedClassVersionError: com/github/yjgbg/jpa/plus/JpaPlusSupport has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:469)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1551)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1478)
+	... 16 common frames omitted
+2020/10/29 17:26:53.967 c.y.c.CasClientSpringBootApplication [] INFO  Starting CasClientSpringBootApplication on DESKTOP-7UAOHGE with PID 13376 (C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot\target\classes started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate)
+2020/10/29 17:26:53.969 c.y.c.CasClientSpringBootApplication [] INFO  No active profile set, falling back to default profiles: default
+2020/10/29 17:26:55.242 o.s.b.w.e.tomcat.TomcatWebServer [] INFO  Tomcat initialized with port(s): 8084 (http)
+2020/10/29 17:26:55.255 o.a.coyote.http11.Http11NioProtocol [] INFO  Initializing ProtocolHandler ["http-nio-8084"]
+2020/10/29 17:26:55.256 o.a.catalina.core.StandardService [] INFO  Starting service [Tomcat]
+2020/10/29 17:26:55.256 o.a.catalina.core.StandardEngine [] INFO  Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020/10/29 17:26:55.548 o.apache.jasper.servlet.TldScanner [] INFO  At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020/10/29 17:26:55.555 o.a.c.c.C.[Tomcat].[localhost].[/] [] INFO  Initializing Spring embedded WebApplicationContext
+2020/10/29 17:26:55.555 o.s.b.w.s.c.ServletWebServerApplicationContext [] INFO  Root WebApplicationContext: initialization completed in 1507 ms
+2020/10/29 17:26:55.670 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [serverName] loaded from FilterConfig.getInitParameter with value [http://app4.cas.com:8084]
+2020/10/29 17:26:55.671 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas]
+2020/10/29 17:26:55.674 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [serverName] loaded from FilterConfig.getInitParameter with value [http://app4.cas.com:8084]
+2020/10/29 17:26:55.674 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas/login]
+2020/10/29 17:26:56.937 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/10/29 17:26:57.289 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/10/29 17:26:57.571 o.a.coyote.http11.Http11NioProtocol [] INFO  Starting ProtocolHandler ["http-nio-8084"]
+2020/10/29 17:26:57.598 o.s.b.w.e.tomcat.TomcatWebServer [] INFO  Tomcat started on port(s): 8084 (http) with context path ''
+2020/10/29 17:26:57.622 c.y.c.CasClientSpringBootApplication [] INFO  Started CasClientSpringBootApplication in 4.295 seconds (JVM running for 5.193)
+2020/10/29 17:28:03.209 o.a.c.c.C.[Tomcat].[localhost].[/] [] INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/10/29 17:28:03.209 o.s.web.servlet.DispatcherServlet [] INFO  Initializing Servlet 'dispatcherServlet'
+2020/10/29 17:28:03.219 o.s.web.servlet.DispatcherServlet [] INFO  Completed initialization in 10 ms
+2020/10/29 17:28:32.762 o.a.c.c.C.[.[.[.[dispatcherServlet] [] ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [org.jasig.cas.client.validation.TicketValidationException: 未能够识别出目标 'ST-8-tGLo2oCQUAGb8evYuOkH10zJMQ8DESKTOP-7UAOHGE'票根] with root cause
+org.jasig.cas.client.validation.TicketValidationException: 未能够识别出目标 'ST-8-tGLo2oCQUAGb8evYuOkH10zJMQ8DESKTOP-7UAOHGE'票根
+	at org.jasig.cas.client.validation.Cas20ServiceTicketValidator.parseResponseFromServer(Cas20ServiceTicketValidator.java:84)
+	at org.jasig.cas.client.validation.AbstractUrlBasedTicketValidator.validate(AbstractUrlBasedTicketValidator.java:201)
+	at org.jasig.cas.client.validation.AbstractTicketValidationFilter.doFilter(AbstractTicketValidationFilter.java:204)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020/10/29 17:28:34.591 o.a.c.c.C.[.[.[.[dispatcherServlet] [] ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [org.jasig.cas.client.validation.TicketValidationException: 未能够识别出目标 'ST-15-tuojXYMt33G1by98idvSmZiRrJsDESKTOP-7UAOHGE'票根] with root cause
+org.jasig.cas.client.validation.TicketValidationException: 未能够识别出目标 'ST-15-tuojXYMt33G1by98idvSmZiRrJsDESKTOP-7UAOHGE'票根
+	at org.jasig.cas.client.validation.Cas20ServiceTicketValidator.parseResponseFromServer(Cas20ServiceTicketValidator.java:84)
+	at org.jasig.cas.client.validation.AbstractUrlBasedTicketValidator.validate(AbstractUrlBasedTicketValidator.java:201)
+	at org.jasig.cas.client.validation.AbstractTicketValidationFilter.doFilter(AbstractTicketValidationFilter.java:204)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)

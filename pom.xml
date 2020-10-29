@@ -13,9 +13,12 @@
         <module>eureka-server</module>
         <module>eureka-client-one</module>
         <module>eureka-client-two</module>
+
         <module>cas-server</module>
         <module>cas-client-one</module>
         <module>cas-client-two</module>
+        <module>cas-client-spring-tradition</module>
+        <module>cas-client-spring-boot</module>
     </modules>
 
 

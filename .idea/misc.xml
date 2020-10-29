@@ -19,6 +19,7 @@
         <option value="$PROJECT_DIR$/cas-client-one/pom.xml" />
         <option value="$PROJECT_DIR$/cas-client-two/pom.xml" />
         <option value="$PROJECT_DIR$/cas-client-spring-tradition/pom.xml" />
+        <option value="$PROJECT_DIR$/cas-client-spring-boot/pom.xml" />
       </list>
     </option>
   </component>

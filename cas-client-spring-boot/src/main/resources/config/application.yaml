@@ -1,0 +1,43 @@
+#\u914D\u7F6Etomcat
+server:
+  port: 8084
+  servlet:
+    context-path: /
+
+#\u65E5\u5FD7\u6587\u4EF6\u7684\u8DEF\u5F84
+logging:
+  config: classpath:config/logback-spring.xml
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.10.2.92:3306/test?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    maxActive: 30 #\u914D\u7F6E\u6700\u5927\u8FDE\u63A5\u6570
+    initialSize: 20 #\u914D\u7F6E\u521D\u59CB\u5316\u8FDE\u63A5\u6570
+    minIdle: 20 #\u914D\u7F6E\u6700\u5C0F\u8FDE\u63A5\u6570
+
+#jsp \u652F\u6301
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /WEB-INF/jsp/
+
+#\u5173\u95ED\u9ED8\u8BA4\u6A21\u677F\u5F15\u64CE
+  thymeleaf:
+    cache: false
+    enabled: false
+
+#cas\u914D\u7F6E
+#cas\u670D\u52A1\u7AEF\u524D\u7F00,\u4E0D\u662F\u767B\u5F55\u5730\u5740
+cas:
+  server-url-prefix: https://server.cas.com:8443/cas
+#cas\u7684\u767B\u5F55\u5730\u5740
+  server-login-url: https://server.cas.com:8443/cas/login
+#\u5F53\u524D\u5BA2\u6237\u7AEF\u7684\u5730\u5740
+  client-host-url: http://app4.cas.com:8084
+#Ticket\u6821\u9A8C\u5668\u4F7F\u7528Cas30ProxyReceivingTicketValidationFilter
+  validation-type: CAS3
