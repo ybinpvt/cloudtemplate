@@ -9,6 +9,50 @@
     <version>1.0</version>
 
     <dependencies>
+        <!-- 自定义认证的方式 begin -->
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-core-webflow</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-core-authentication</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-core-authentication-api</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-webapp-config</artifactId>
+            <version>${cas.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <!--连接池  -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.28</version>
+        </dependency>
+        <!--<dependency>-->
+        <!--<groupId>org.apereo.cas</groupId>-->
+        <!--<artifactId>cas-server-support-shiro-authentication</artifactId>-->
+        <!--<version>${cas.version}</version>-->
+        <!--</dependency>-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-generic</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
+
         <!--自定义登录验证-->
         <dependency>
             <groupId>org.apereo.cas</groupId>
