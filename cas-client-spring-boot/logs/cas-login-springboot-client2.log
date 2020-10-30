@@ -1,0 +1,260 @@
+2020/10/30 09:14:18.688 c.y.c.CasClientSpringBootApplicationTests [] INFO  Starting CasClientSpringBootApplicationTests on DESKTOP-7UAOHGE with PID 7580 (started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot)
+2020/10/30 09:14:18.690 c.y.c.CasClientSpringBootApplicationTests [] INFO  No active profile set, falling back to default profiles: default
+2020/10/30 09:14:20.903 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/10/30 09:14:21.835 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/10/30 09:14:22.018 o.s.b.a.w.s.WelcomePageHandlerMapping [] INFO  Adding welcome page template: index
+2020/10/30 09:14:22.531 c.y.c.CasClientSpringBootApplicationTests [] INFO  Started CasClientSpringBootApplicationTests in 4.322 seconds (JVM running for 5.458)
+2020/10/30 09:14:23.049 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/10/30 09:14:23.068 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/10/30 09:19:46.522 c.y.c.CasClientSpringBootApplicationTests [] INFO  Starting CasClientSpringBootApplicationTests on DESKTOP-7UAOHGE with PID 17872 (started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot)
+2020/10/30 09:19:46.524 c.y.c.CasClientSpringBootApplicationTests [] INFO  No active profile set, falling back to default profiles: default
+2020/10/30 09:19:48.801 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/10/30 09:19:49.722 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/10/30 09:19:49.873 o.s.b.a.w.s.WelcomePageHandlerMapping [] INFO  Adding welcome page template: index
+2020/10/30 09:19:50.350 c.y.c.CasClientSpringBootApplicationTests [] INFO  Started CasClientSpringBootApplicationTests in 4.253 seconds (JVM running for 5.352)
+2020/10/30 09:19:50.766 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/10/30 09:19:50.781 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/10/30 09:24:59.344 c.y.c.CasClientSpringBootApplicationTests [] INFO  Starting CasClientSpringBootApplicationTests on DESKTOP-7UAOHGE with PID 17608 (started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot)
+2020/10/30 09:24:59.346 c.y.c.CasClientSpringBootApplicationTests [] INFO  No active profile set, falling back to default profiles: default
+2020/10/30 09:25:01.972 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/10/30 09:25:03.119 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/10/30 09:25:03.284 o.s.b.a.w.s.WelcomePageHandlerMapping [] INFO  Adding welcome page template: index
+2020/10/30 09:25:03.719 c.y.c.CasClientSpringBootApplicationTests [] INFO  Started CasClientSpringBootApplicationTests in 4.807 seconds (JVM running for 5.933)
+2020/10/30 09:25:04.190 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/10/30 09:25:04.212 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/10/30 09:27:20.369 c.y.c.CasClientSpringBootApplicationTests [] INFO  Starting CasClientSpringBootApplicationTests on DESKTOP-7UAOHGE with PID 4968 (started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot)
+2020/10/30 09:27:20.372 c.y.c.CasClientSpringBootApplicationTests [] INFO  No active profile set, falling back to default profiles: default
+2020/10/30 09:27:22.734 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/10/30 09:27:23.580 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/10/30 09:27:23.762 o.s.b.a.w.s.WelcomePageHandlerMapping [] INFO  Adding welcome page template: index
+2020/10/30 09:27:24.226 c.y.c.CasClientSpringBootApplicationTests [] INFO  Started CasClientSpringBootApplicationTests in 4.276 seconds (JVM running for 5.368)
+2020/10/30 09:27:24.618 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/10/30 09:27:24.631 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/10/30 09:31:57.018 c.y.c.CasClientSpringBootApplicationTests [] INFO  Starting CasClientSpringBootApplicationTests on DESKTOP-7UAOHGE with PID 8668 (started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot)
+2020/10/30 09:31:57.021 c.y.c.CasClientSpringBootApplicationTests [] INFO  No active profile set, falling back to default profiles: default
+2020/10/30 09:31:59.231 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/10/30 09:32:00.120 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/10/30 09:32:00.284 o.s.b.a.w.s.WelcomePageHandlerMapping [] INFO  Adding welcome page template: index
+2020/10/30 09:32:00.759 c.y.c.CasClientSpringBootApplicationTests [] INFO  Started CasClientSpringBootApplicationTests in 4.154 seconds (JVM running for 5.236)
+2020/10/30 09:32:01.145 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/10/30 09:32:01.163 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/10/30 09:42:09.638 c.y.c.CasClientSpringBootApplicationTests [] INFO  Starting CasClientSpringBootApplicationTests on DESKTOP-7UAOHGE with PID 7560 (started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot)
+2020/10/30 09:42:09.640 c.y.c.CasClientSpringBootApplicationTests [] INFO  No active profile set, falling back to default profiles: default
+2020/10/30 09:42:12.069 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/10/30 09:42:13.093 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/10/30 09:42:13.367 o.s.b.a.w.s.WelcomePageHandlerMapping [] INFO  Adding welcome page template: index
+2020/10/30 09:42:13.800 c.y.c.CasClientSpringBootApplicationTests [] INFO  Started CasClientSpringBootApplicationTests in 4.674 seconds (JVM running for 5.788)
+2020/10/30 09:42:14.355 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/10/30 09:42:14.376 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/10/30 10:46:31.270 c.y.c.CasClientSpringBootApplicationTests [] INFO  Starting CasClientSpringBootApplicationTests on DESKTOP-7UAOHGE with PID 4588 (started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot)
+2020/10/30 10:46:31.272 c.y.c.CasClientSpringBootApplicationTests [] INFO  No active profile set, falling back to default profiles: default
+2020/10/30 10:46:33.686 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/10/30 10:46:34.711 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/10/30 10:46:34.899 o.s.b.a.w.s.WelcomePageHandlerMapping [] INFO  Adding welcome page template: index
+2020/10/30 10:46:35.334 c.y.c.CasClientSpringBootApplicationTests [] INFO  Started CasClientSpringBootApplicationTests in 4.598 seconds (JVM running for 5.741)
+2020/10/30 10:46:35.940 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/10/30 10:46:35.963 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/10/30 10:50:35.888 c.y.c.CasClientSpringBootApplicationTests [] INFO  Starting CasClientSpringBootApplicationTests on DESKTOP-7UAOHGE with PID 12436 (started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot)
+2020/10/30 10:50:35.890 c.y.c.CasClientSpringBootApplicationTests [] INFO  No active profile set, falling back to default profiles: default
+2020/10/30 10:50:38.173 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/10/30 10:50:39.046 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/10/30 10:50:39.229 o.s.b.a.w.s.WelcomePageHandlerMapping [] INFO  Adding welcome page template: index
+2020/10/30 10:50:39.708 c.y.c.CasClientSpringBootApplicationTests [] INFO  Started CasClientSpringBootApplicationTests in 4.262 seconds (JVM running for 5.402)
+2020/10/30 10:50:40.113 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/10/30 10:50:40.129 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/10/30 11:35:09.558 c.y.c.CasClientSpringBootApplication [] INFO  Starting CasClientSpringBootApplication on DESKTOP-7UAOHGE with PID 16244 (C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot\target\classes started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot)
+2020/10/30 11:35:09.566 c.y.c.CasClientSpringBootApplication [] INFO  No active profile set, falling back to default profiles: default
+2020/10/30 11:35:10.847 o.s.b.w.e.tomcat.TomcatWebServer [] INFO  Tomcat initialized with port(s): 8084 (http)
+2020/10/30 11:35:10.857 o.a.coyote.http11.Http11NioProtocol [] INFO  Initializing ProtocolHandler ["http-nio-8084"]
+2020/10/30 11:35:10.858 o.a.catalina.core.StandardService [] INFO  Starting service [Tomcat]
+2020/10/30 11:35:10.858 o.a.catalina.core.StandardEngine [] INFO  Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020/10/30 11:35:10.860 o.a.c.core.AprLifecycleListener [] INFO  Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2020/10/30 11:35:10.860 o.a.c.core.AprLifecycleListener [] INFO  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020/10/30 11:35:10.861 o.a.c.core.AprLifecycleListener [] INFO  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020/10/30 11:35:10.868 o.a.c.core.AprLifecycleListener [] INFO  OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020/10/30 11:35:11.053 o.apache.jasper.servlet.TldScanner [] INFO  At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020/10/30 11:35:11.057 o.a.c.c.C.[Tomcat].[localhost].[/] [] INFO  Initializing Spring embedded WebApplicationContext
+2020/10/30 11:35:11.061 o.s.b.w.s.c.ServletWebServerApplicationContext [] INFO  Root WebApplicationContext: initialization completed in 1452 ms
+2020/10/30 11:35:11.169 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [serverName] loaded from FilterConfig.getInitParameter with value [http://app4.cas.com:8084]
+2020/10/30 11:35:11.171 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas]
+2020/10/30 11:35:11.174 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [serverName] loaded from FilterConfig.getInitParameter with value [http://app4.cas.com:8084]
+2020/10/30 11:35:11.175 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas/login]
+2020/10/30 11:35:12.399 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/10/30 11:35:12.772 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/10/30 11:35:12.879 o.s.b.a.w.s.WelcomePageHandlerMapping [] INFO  Adding welcome page template: index
+2020/10/30 11:35:13.197 o.a.coyote.http11.Http11NioProtocol [] INFO  Starting ProtocolHandler ["http-nio-8084"]
+2020/10/30 11:35:13.208 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8084 is already in use
+2020/10/30 11:35:13.208 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/10/30 11:35:13.221 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/10/30 11:35:13.225 o.a.coyote.http11.Http11NioProtocol [] INFO  Pausing ProtocolHandler ["http-nio-8084"]
+2020/10/30 11:35:13.229 o.a.catalina.core.StandardService [] INFO  Stopping service [Tomcat]
+2020/10/30 11:35:13.234 o.a.coyote.http11.Http11NioProtocol [] INFO  Stopping ProtocolHandler ["http-nio-8084"]
+2020/10/30 11:35:13.236 o.a.coyote.http11.Http11NioProtocol [] INFO  Destroying ProtocolHandler ["http-nio-8084"]
+2020/10/30 11:35:13.274 o.s.b.d.LoggingFailureAnalysisReporter [] ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8084 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8084 or configure this application to listen on another port.
+
+2020/10/30 11:37:13.459 c.y.c.CasClientSpringBootApplication [] INFO  Starting CasClientSpringBootApplication on DESKTOP-7UAOHGE with PID 4992 (C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot\target\classes started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot)
+2020/10/30 11:37:13.462 c.y.c.CasClientSpringBootApplication [] INFO  No active profile set, falling back to default profiles: default
+2020/10/30 11:37:14.794 o.s.b.w.e.tomcat.TomcatWebServer [] INFO  Tomcat initialized with port(s): 8084 (http)
+2020/10/30 11:37:14.805 o.a.coyote.http11.Http11NioProtocol [] INFO  Initializing ProtocolHandler ["http-nio-8084"]
+2020/10/30 11:37:14.806 o.a.catalina.core.StandardService [] INFO  Starting service [Tomcat]
+2020/10/30 11:37:14.806 o.a.catalina.core.StandardEngine [] INFO  Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020/10/30 11:37:14.809 o.a.c.core.AprLifecycleListener [] INFO  Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2020/10/30 11:37:14.810 o.a.c.core.AprLifecycleListener [] INFO  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020/10/30 11:37:14.811 o.a.c.core.AprLifecycleListener [] INFO  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020/10/30 11:37:14.814 o.a.c.core.AprLifecycleListener [] INFO  OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020/10/30 11:37:14.989 o.apache.jasper.servlet.TldScanner [] INFO  At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020/10/30 11:37:14.993 o.a.c.c.C.[Tomcat].[localhost].[/] [] INFO  Initializing Spring embedded WebApplicationContext
+2020/10/30 11:37:14.998 o.s.b.w.s.c.ServletWebServerApplicationContext [] INFO  Root WebApplicationContext: initialization completed in 1489 ms
+2020/10/30 11:37:15.109 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [serverName] loaded from FilterConfig.getInitParameter with value [http://app4.cas.com:8084]
+2020/10/30 11:37:15.112 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas]
+2020/10/30 11:37:15.114 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [serverName] loaded from FilterConfig.getInitParameter with value [http://app4.cas.com:8084]
+2020/10/30 11:37:15.118 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas/login]
+2020/10/30 11:37:16.395 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/10/30 11:37:16.770 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/10/30 11:37:16.883 o.s.b.a.w.s.WelcomePageHandlerMapping [] INFO  Adding welcome page template: index
+2020/10/30 11:37:17.256 o.a.coyote.http11.Http11NioProtocol [] INFO  Starting ProtocolHandler ["http-nio-8084"]
+2020/10/30 11:37:17.269 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8084 is already in use
+2020/10/30 11:37:17.269 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/10/30 11:37:17.294 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/10/30 11:37:17.297 o.a.coyote.http11.Http11NioProtocol [] INFO  Pausing ProtocolHandler ["http-nio-8084"]
+2020/10/30 11:37:17.298 o.a.catalina.core.StandardService [] INFO  Stopping service [Tomcat]
+2020/10/30 11:37:17.302 o.a.coyote.http11.Http11NioProtocol [] INFO  Stopping ProtocolHandler ["http-nio-8084"]
+2020/10/30 11:37:17.303 o.a.coyote.http11.Http11NioProtocol [] INFO  Destroying ProtocolHandler ["http-nio-8084"]
+2020/10/30 11:37:17.344 o.s.b.d.LoggingFailureAnalysisReporter [] ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8084 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8084 or configure this application to listen on another port.
+
+2020/10/30 11:38:13.537 c.y.c.CasClientSpringBootApplication [] INFO  Starting CasClientSpringBootApplication on DESKTOP-7UAOHGE with PID 1484 (C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot\target\classes started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot)
+2020/10/30 11:38:13.546 c.y.c.CasClientSpringBootApplication [] INFO  No active profile set, falling back to default profiles: default
+2020/10/30 11:38:14.882 o.s.b.w.e.tomcat.TomcatWebServer [] INFO  Tomcat initialized with port(s): 8084 (http)
+2020/10/30 11:38:14.893 o.a.coyote.http11.Http11NioProtocol [] INFO  Initializing ProtocolHandler ["http-nio-8084"]
+2020/10/30 11:38:14.894 o.a.catalina.core.StandardService [] INFO  Starting service [Tomcat]
+2020/10/30 11:38:14.894 o.a.catalina.core.StandardEngine [] INFO  Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020/10/30 11:38:14.896 o.a.c.core.AprLifecycleListener [] INFO  Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2020/10/30 11:38:14.897 o.a.c.core.AprLifecycleListener [] INFO  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020/10/30 11:38:14.897 o.a.c.core.AprLifecycleListener [] INFO  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020/10/30 11:38:14.900 o.a.c.core.AprLifecycleListener [] INFO  OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020/10/30 11:38:15.074 o.apache.jasper.servlet.TldScanner [] INFO  At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020/10/30 11:38:15.079 o.a.c.c.C.[Tomcat].[localhost].[/] [] INFO  Initializing Spring embedded WebApplicationContext
+2020/10/30 11:38:15.083 o.s.b.w.s.c.ServletWebServerApplicationContext [] INFO  Root WebApplicationContext: initialization completed in 1495 ms
+2020/10/30 11:38:15.192 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [serverName] loaded from FilterConfig.getInitParameter with value [http://app4.cas.com:8084]
+2020/10/30 11:38:15.201 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas]
+2020/10/30 11:38:15.203 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [serverName] loaded from FilterConfig.getInitParameter with value [http://app4.cas.com:8084]
+2020/10/30 11:38:15.204 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas/login]
+2020/10/30 11:38:16.176 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/10/30 11:38:16.552 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/10/30 11:38:16.659 o.s.b.a.w.s.WelcomePageHandlerMapping [] INFO  Adding welcome page template: index
+2020/10/30 11:38:16.974 o.a.coyote.http11.Http11NioProtocol [] INFO  Starting ProtocolHandler ["http-nio-8084"]
+2020/10/30 11:38:16.999 o.s.b.w.e.tomcat.TomcatWebServer [] INFO  Tomcat started on port(s): 8084 (http) with context path ''
+2020/10/30 11:38:17.036 c.y.c.CasClientSpringBootApplication [] INFO  Started CasClientSpringBootApplication in 3.923 seconds (JVM running for 4.266)
+2020/10/30 11:38:35.441 o.a.c.c.C.[Tomcat].[localhost].[/] [] INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/10/30 11:38:35.441 o.s.web.servlet.DispatcherServlet [] INFO  Initializing Servlet 'dispatcherServlet'
+2020/10/30 11:38:35.446 o.s.web.servlet.DispatcherServlet [] INFO  Completed initialization in 5 ms
+2020/10/30 11:47:54.430 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/10/30 11:47:54.443 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/10/30 11:51:22.053 c.y.c.CasClientSpringBootApplication [] INFO  Starting CasClientSpringBootApplication on DESKTOP-7UAOHGE with PID 13888 (C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot\target\classes started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot)
+2020/10/30 11:51:22.062 c.y.c.CasClientSpringBootApplication [] INFO  No active profile set, falling back to default profiles: default
+2020/10/30 11:51:23.555 o.s.b.w.e.tomcat.TomcatWebServer [] INFO  Tomcat initialized with port(s): 8084 (http)
+2020/10/30 11:51:23.566 o.a.coyote.http11.Http11NioProtocol [] INFO  Initializing ProtocolHandler ["http-nio-8084"]
+2020/10/30 11:51:23.567 o.a.catalina.core.StandardService [] INFO  Starting service [Tomcat]
+2020/10/30 11:51:23.567 o.a.catalina.core.StandardEngine [] INFO  Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020/10/30 11:51:23.570 o.a.c.core.AprLifecycleListener [] INFO  Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2020/10/30 11:51:23.570 o.a.c.core.AprLifecycleListener [] INFO  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020/10/30 11:51:23.570 o.a.c.core.AprLifecycleListener [] INFO  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020/10/30 11:51:23.575 o.a.c.core.AprLifecycleListener [] INFO  OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020/10/30 11:51:23.763 o.apache.jasper.servlet.TldScanner [] INFO  At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020/10/30 11:51:23.768 o.a.c.c.C.[Tomcat].[localhost].[/] [] INFO  Initializing Spring embedded WebApplicationContext
+2020/10/30 11:51:23.772 o.s.b.w.s.c.ServletWebServerApplicationContext [] INFO  Root WebApplicationContext: initialization completed in 1666 ms
+2020/10/30 11:51:23.900 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [serverName] loaded from FilterConfig.getInitParameter with value [http://app4.cas.com:8084]
+2020/10/30 11:51:23.909 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas]
+2020/10/30 11:51:23.911 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [serverName] loaded from FilterConfig.getInitParameter with value [http://app4.cas.com:8084]
+2020/10/30 11:51:23.911 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas/login]
+2020/10/30 11:51:24.922 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/10/30 11:51:25.394 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/10/30 11:51:25.517 o.s.b.a.w.s.WelcomePageHandlerMapping [] INFO  Adding welcome page template: index
+2020/10/30 11:51:25.873 o.a.coyote.http11.Http11NioProtocol [] INFO  Starting ProtocolHandler ["http-nio-8084"]
+2020/10/30 11:51:25.905 o.s.b.w.e.tomcat.TomcatWebServer [] INFO  Tomcat started on port(s): 8084 (http) with context path ''
+2020/10/30 11:51:25.952 c.y.c.CasClientSpringBootApplication [] INFO  Started CasClientSpringBootApplication in 4.33 seconds (JVM running for 4.697)
+2020/10/30 11:51:35.752 o.a.c.c.C.[Tomcat].[localhost].[/] [] INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/10/30 11:51:35.752 o.s.web.servlet.DispatcherServlet [] INFO  Initializing Servlet 'dispatcherServlet'
+2020/10/30 11:51:35.759 o.s.web.servlet.DispatcherServlet [] INFO  Completed initialization in 7 ms
+2020/10/30 11:56:30.373 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/10/30 11:56:30.386 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/10/30 11:56:40.057 c.y.c.CasClientSpringBootApplication [] INFO  Starting CasClientSpringBootApplication on DESKTOP-7UAOHGE with PID 19016 (C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot\target\classes started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot)
+2020/10/30 11:56:40.060 c.y.c.CasClientSpringBootApplication [] INFO  No active profile set, falling back to default profiles: default
+2020/10/30 11:56:41.448 o.s.b.w.e.tomcat.TomcatWebServer [] INFO  Tomcat initialized with port(s): 8084 (http)
+2020/10/30 11:56:41.460 o.a.coyote.http11.Http11NioProtocol [] INFO  Initializing ProtocolHandler ["http-nio-8084"]
+2020/10/30 11:56:41.461 o.a.catalina.core.StandardService [] INFO  Starting service [Tomcat]
+2020/10/30 11:56:41.461 o.a.catalina.core.StandardEngine [] INFO  Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020/10/30 11:56:41.463 o.a.c.core.AprLifecycleListener [] INFO  Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2020/10/30 11:56:41.464 o.a.c.core.AprLifecycleListener [] INFO  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020/10/30 11:56:41.464 o.a.c.core.AprLifecycleListener [] INFO  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020/10/30 11:56:41.469 o.a.c.core.AprLifecycleListener [] INFO  OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020/10/30 11:56:41.656 o.apache.jasper.servlet.TldScanner [] INFO  At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020/10/30 11:56:41.661 o.a.c.c.C.[Tomcat].[localhost].[/] [] INFO  Initializing Spring embedded WebApplicationContext
+2020/10/30 11:56:41.665 o.s.b.w.s.c.ServletWebServerApplicationContext [] INFO  Root WebApplicationContext: initialization completed in 1556 ms
+2020/10/30 11:56:41.791 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [serverName] loaded from FilterConfig.getInitParameter with value [http://app4.cas.com:8084]
+2020/10/30 11:56:41.794 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas]
+2020/10/30 11:56:41.797 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [serverName] loaded from FilterConfig.getInitParameter with value [http://app4.cas.com:8084]
+2020/10/30 11:56:41.801 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas/login]
+2020/10/30 11:56:42.872 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/10/30 11:56:43.368 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/10/30 11:56:43.485 o.s.b.a.w.s.WelcomePageHandlerMapping [] INFO  Adding welcome page template: index
+2020/10/30 11:56:43.798 o.a.coyote.http11.Http11NioProtocol [] INFO  Starting ProtocolHandler ["http-nio-8084"]
+2020/10/30 11:56:43.836 o.s.b.w.e.tomcat.TomcatWebServer [] INFO  Tomcat started on port(s): 8084 (http) with context path ''
+2020/10/30 11:56:43.874 c.y.c.CasClientSpringBootApplication [] INFO  Started CasClientSpringBootApplication in 4.234 seconds (JVM running for 4.576)
+2020/10/30 11:56:56.903 o.a.c.c.C.[Tomcat].[localhost].[/] [] INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/10/30 13:00:17.036 o.s.web.servlet.DispatcherServlet [] INFO  Initializing Servlet 'dispatcherServlet'
+2020/10/30 13:00:17.053 o.s.web.servlet.DispatcherServlet [] INFO  Completed initialization in 15 ms
+2020/10/30 13:01:32.660 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/10/30 13:01:32.670 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/10/30 13:01:46.109 c.y.c.CasClientSpringBootApplication [] INFO  Starting CasClientSpringBootApplication on DESKTOP-7UAOHGE with PID 18208 (C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot\target\classes started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate\cas-client-spring-boot)
+2020/10/30 13:01:46.113 c.y.c.CasClientSpringBootApplication [] INFO  No active profile set, falling back to default profiles: default
+2020/10/30 13:01:47.550 o.s.b.w.e.tomcat.TomcatWebServer [] INFO  Tomcat initialized with port(s): 8084 (http)
+2020/10/30 13:01:47.561 o.a.coyote.http11.Http11NioProtocol [] INFO  Initializing ProtocolHandler ["http-nio-8084"]
+2020/10/30 13:01:47.562 o.a.catalina.core.StandardService [] INFO  Starting service [Tomcat]
+2020/10/30 13:01:47.563 o.a.catalina.core.StandardEngine [] INFO  Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020/10/30 13:01:47.566 o.a.c.core.AprLifecycleListener [] INFO  Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2020/10/30 13:01:47.567 o.a.c.core.AprLifecycleListener [] INFO  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020/10/30 13:01:47.568 o.a.c.core.AprLifecycleListener [] INFO  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020/10/30 13:01:47.573 o.a.c.core.AprLifecycleListener [] INFO  OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020/10/30 13:01:47.765 o.apache.jasper.servlet.TldScanner [] INFO  At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020/10/30 13:01:47.770 o.a.c.c.C.[Tomcat].[localhost].[/] [] INFO  Initializing Spring embedded WebApplicationContext
+2020/10/30 13:01:47.774 o.s.b.w.s.c.ServletWebServerApplicationContext [] INFO  Root WebApplicationContext: initialization completed in 1614 ms
+2020/10/30 13:01:47.903 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [serverName] loaded from FilterConfig.getInitParameter with value [http://app4.cas.com:8084]
+2020/10/30 13:01:47.906 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas]
+2020/10/30 13:01:47.908 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [serverName] loaded from FilterConfig.getInitParameter with value [http://app4.cas.com:8084]
+2020/10/30 13:01:47.912 o.j.c.c.c.WebXmlConfigurationStrategyImpl [] INFO  Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas/login]
+2020/10/30 13:01:48.999 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/10/30 13:01:49.441 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/10/30 13:01:49.548 o.s.b.a.w.s.WelcomePageHandlerMapping [] INFO  Adding welcome page template: index
+2020/10/30 13:01:49.882 o.a.coyote.http11.Http11NioProtocol [] INFO  Starting ProtocolHandler ["http-nio-8084"]
+2020/10/30 13:01:49.918 o.s.b.w.e.tomcat.TomcatWebServer [] INFO  Tomcat started on port(s): 8084 (http) with context path ''
+2020/10/30 13:01:49.954 c.y.c.CasClientSpringBootApplication [] INFO  Started CasClientSpringBootApplication in 4.271 seconds (JVM running for 4.631)
+2020/10/30 13:02:11.710 o.a.c.c.C.[Tomcat].[localhost].[/] [] INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/10/30 13:02:19.092 o.s.web.servlet.DispatcherServlet [] INFO  Initializing Servlet 'dispatcherServlet'
+2020/10/30 13:02:19.103 o.s.web.servlet.DispatcherServlet [] INFO  Completed initialization in 8 ms
+2020/10/30 13:06:26.960 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/10/30 13:06:26.973 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed

@@ -3,7 +3,7 @@
          xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
-    <display-name>cas-app</display-name>
+    <display-name>cas-app1</display-name>
     <!-- ========================单点登录开始 ======================== -->
     <!-- 用于单点退出，该过滤器用于实现单点登出功能，可选配置 -->
     <listener>

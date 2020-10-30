@@ -9,12 +9,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
         <module name="eureka-client-one" />
-        <module name="cas-server" />
-        <module name="cas-client-spring-tradition" />
         <module name="eureka-client-two" />
-        <module name="cas-client-two" />
-        <module name="cas-client-one" />
         <module name="cas-client-spring-boot" />
+        <module name="cas-client-spring-tradition" />
+        <module name="cas-server" />
+        <module name="cas-client-one" />
+        <module name="cas-client-two" />
       </profile>
     </annotationProcessing>
   </component>

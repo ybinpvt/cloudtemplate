@@ -42,4 +42,9 @@ public class IndexController {
 
         return "index";
     }
+
+    @RequestMapping("/logout.jsp")
+    public String logout() {
+        return "redirect:https://server.cas.com:8443/cas/logout";
+    }
 }

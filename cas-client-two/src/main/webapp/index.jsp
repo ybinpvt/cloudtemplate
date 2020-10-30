@@ -15,10 +15,12 @@
 </head>
 <body>
 
-<h1>当前为客户端1</h1>
+<h1>当前为客户端2</h1>
 <h2><a href="http://app1.cas.com:8081/">客户端1</a></h2>
 <h2><a href="http://app2.cas.com:8082/">客户端2</a></h2>
-<h2><a href="http://app3.cas.com:8083/">客户端3</a></h2>
+<h2><a href="http://app3.cas.com:8083/">客户端tradition</a></h2>
+<h2><a href="http://app4.cas.com:8084/">客户端spring-boot</a></h2>
+<h2><a href="http://app5.cas.com:8085/">客户端next</a></h2>
 <br>
 <h2><a href="https://server.cas.com:8443/cas/logout/">注销</a></h2>
 <p>A sample web application that exercises the CAS protocol features via the Java CAS Client.</p>
