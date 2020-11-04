@@ -3,6 +3,7 @@ package com.ybin.shirodemo.entity;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -16,7 +17,7 @@ import java.util.Set;
 @Data
 @Entity
 @Table(name = "shiro_user")
-public class User extends BaseEntity {
+public class User extends BaseEntity implements Serializable {
     @Column(columnDefinition="varchar(100) COMMENT '姓名'")
     private String username;
     @Column(columnDefinition="varchar(255) COMMENT '密码'")
