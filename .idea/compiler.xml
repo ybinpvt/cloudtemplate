@@ -15,6 +15,7 @@
         <module name="cas-server" />
         <module name="cas-client-one" />
         <module name="cas-client-two" />
+        <module name="shiro-demo" />
       </profile>
     </annotationProcessing>
   </component>
@@ -28,6 +29,7 @@
       <module name="eureka-client-one" options="-parameters" />
       <module name="eureka-client-two" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="shiro-demo" options="-parameters" />
     </option>
   </component>
 </project>

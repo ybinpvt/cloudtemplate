@@ -1,0 +1,1088 @@
+2020/11/03 09:01:17.687 c.y.shirodemo.ShiroDemoApplication [] INFO  Starting ShiroDemoApplication on DESKTOP-7UAOHGE with PID 17024 (C:\Users\ribo\IdeaProjects\cloudtemplate\shiro-demo\target\classes started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate)
+2020/11/03 09:01:17.692 c.y.shirodemo.ShiroDemoApplication [] INFO  No active profile set, falling back to default profiles: default
+2020/11/03 09:01:17.751 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/11/03 09:01:17.751 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/11/03 09:01:18.800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'shiroConfig' of type [com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$5588ab0e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:01:18.866 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:01:18.872 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$d8c1d2e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:01:18.878 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'dataSourceConfig' of type [com.ybin.shirodemo.config.DataSourceConfig$$EnhancerBySpringCGLIB$$e650c1a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:01:18.984 c.a.druid.pool.DruidDataSource [] ERROR init datasource error, url: : jdbc:mysql://10.10.2.92:3306/test_shiro?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+java.sql.SQLException: connect error, url : jdbc:mysql://10.10.2.92:3306/test_shiro?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, driverClass com.mysql.cj.jdbc.Driver
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1721)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:914)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1920)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1404)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:1007)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:884)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:619)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:536)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:265)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1473)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1270)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:229)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:723)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:536)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ybin.shirodemo.ShiroDemoApplication.main(ShiroDemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2020/11/03 09:01:18.991 c.a.druid.pool.DruidDataSource [] ERROR {dataSource-1} init error
+java.sql.SQLException: connect error, url : jdbc:mysql://10.10.2.92:3306/test_shiro?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, driverClass com.mysql.cj.jdbc.Driver
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1721)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:914)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1920)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1404)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:1007)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:884)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:619)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:536)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:265)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1473)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1270)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:229)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:723)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:536)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ybin.shirodemo.ShiroDemoApplication.main(ShiroDemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2020/11/03 09:01:18.993 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/11/03 09:01:18.993 c.a.druid.pool.DruidDataSource [] ERROR create connection SQLException, url: : jdbc:mysql://10.10.2.92:3306/test_shiro?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, errorCode 0, state null
+java.sql.SQLException: connect error, url : jdbc:mysql://10.10.2.92:3306/test_shiro?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, driverClass com.mysql.cj.jdbc.Driver
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1721)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2785)
+2020/11/03 09:01:18.994 c.a.druid.pool.DruidDataSource [] ERROR create connection SQLException, url: : jdbc:mysql://10.10.2.92:3306/test_shiro?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, errorCode 0, state null
+java.sql.SQLException: connect error, url : jdbc:mysql://10.10.2.92:3306/test_shiro?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, driverClass com.mysql.cj.jdbc.Driver
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1721)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2785)
+2020/11/03 09:01:18.994 c.a.d.pool.DruidAbstractDataSource [] INFO  {dataSource-1} failContinuous is true
+2020/11/03 09:01:18.996 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceInitializerPostProcessor': Unsatisfied dependency expressed through field 'beanFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilter' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'shiroFilter' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityManager' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'securityManager' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroRealm': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [C:\Users\ribo\IdeaProjects\cloudtemplate\shiro-demo\target\classes\com\ybin\shirodemo\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ybin/shirodemo/config/DataSourceConfig.class]: Invocation of init method failed; nested exception is java.sql.SQLException: connect error, url : jdbc:mysql://10.10.2.92:3306/test_shiro?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, driverClass com.mysql.cj.jdbc.Driver
+2020/11/03 09:01:19.041 o.s.boot.SpringApplication [] ERROR Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceInitializerPostProcessor': Unsatisfied dependency expressed through field 'beanFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilter' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'shiroFilter' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityManager' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'securityManager' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroRealm': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [C:\Users\ribo\IdeaProjects\cloudtemplate\shiro-demo\target\classes\com\ybin\shirodemo\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ybin/shirodemo/config/DataSourceConfig.class]: Invocation of init method failed; nested exception is java.sql.SQLException: connect error, url : jdbc:mysql://10.10.2.92:3306/test_shiro?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, driverClass com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:229)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:723)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:536)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ybin.shirodemo.ShiroDemoApplication.main(ShiroDemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilter' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'shiroFilter' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityManager' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'securityManager' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroRealm': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [C:\Users\ribo\IdeaProjects\cloudtemplate\shiro-demo\target\classes\com\ybin\shirodemo\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ybin/shirodemo/config/DataSourceConfig.class]: Invocation of init method failed; nested exception is java.sql.SQLException: connect error, url : jdbc:mysql://10.10.2.92:3306/test_shiro?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, driverClass com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:1007)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:884)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:619)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:536)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:265)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1473)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1270)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityManager' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'securityManager' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroRealm': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [C:\Users\ribo\IdeaProjects\cloudtemplate\shiro-demo\target\classes\com\ybin\shirodemo\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ybin/shirodemo/config/DataSourceConfig.class]: Invocation of init method failed; nested exception is java.sql.SQLException: connect error, url : jdbc:mysql://10.10.2.92:3306/test_shiro?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, driverClass com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 38 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroRealm': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [C:\Users\ribo\IdeaProjects\cloudtemplate\shiro-demo\target\classes\com\ybin\shirodemo\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ybin/shirodemo/config/DataSourceConfig.class]: Invocation of init method failed; nested exception is java.sql.SQLException: connect error, url : jdbc:mysql://10.10.2.92:3306/test_shiro?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, driverClass com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 52 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [C:\Users\ribo\IdeaProjects\cloudtemplate\shiro-demo\target\classes\com\ybin\shirodemo\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ybin/shirodemo/config/DataSourceConfig.class]: Invocation of init method failed; nested exception is java.sql.SQLException: connect error, url : jdbc:mysql://10.10.2.92:3306/test_shiro?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, driverClass com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1404)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 66 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ybin/shirodemo/config/DataSourceConfig.class]: Invocation of init method failed; nested exception is java.sql.SQLException: connect error, url : jdbc:mysql://10.10.2.92:3306/test_shiro?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, driverClass com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1509)
+	... 77 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ybin/shirodemo/config/DataSourceConfig.class]: Invocation of init method failed; nested exception is java.sql.SQLException: connect error, url : jdbc:mysql://10.10.2.92:3306/test_shiro?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, driverClass com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 90 common frames omitted
+Caused by: java.sql.SQLException: connect error, url : jdbc:mysql://10.10.2.92:3306/test_shiro?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, driverClass com.mysql.cj.jdbc.Driver
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1721)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:914)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1920)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 101 common frames omitted
+2020/11/03 09:14:24.849 c.y.shirodemo.ShiroDemoApplication [] INFO  Starting ShiroDemoApplication on DESKTOP-7UAOHGE with PID 14544 (C:\Users\ribo\IdeaProjects\cloudtemplate\shiro-demo\target\classes started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate)
+2020/11/03 09:14:24.851 c.y.shirodemo.ShiroDemoApplication [] INFO  No active profile set, falling back to default profiles: default
+2020/11/03 09:14:24.920 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/11/03 09:14:24.921 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/11/03 09:14:25.892 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'shiroConfig' of type [com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$ded59fd5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:25.965 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:25.972 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$620ec7ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:25.976 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$48e66bee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:25.978 c.a.d.s.b.a.DruidDataSourceAutoConfigure [] INFO  Init DruidDataSource
+2020/11/03 09:14:26.041 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:26.044 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:26.075 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'statFilter' of type [com.alibaba.druid.filter.stat.StatFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:26.121 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/11/03 09:14:26.122 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'dataSource' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:26.342 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:26.350 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:26.351 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:26.353 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'userMapper' of type [com.sun.proxy.$Proxy53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:26.356 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'roleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:26.357 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'roleMapper' of type [com.sun.proxy.$Proxy54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:26.360 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'permissionMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:26.361 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'permissionMapper' of type [com.sun.proxy.$Proxy55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:26.362 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'shiroRealm' of type [com.ybin.shirodemo.shiro.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:26.907 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:14:27.398 o.s.b.w.e.tomcat.TomcatWebServer [] INFO  Tomcat initialized with port(s): 9090 (http)
+2020/11/03 09:14:27.414 o.a.coyote.http11.Http11NioProtocol [] INFO  Initializing ProtocolHandler ["http-nio-9090"]
+2020/11/03 09:14:27.414 o.a.catalina.core.StandardService [] INFO  Starting service [Tomcat]
+2020/11/03 09:14:27.415 o.a.catalina.core.StandardEngine [] INFO  Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020/11/03 09:14:27.649 o.a.c.c.C.[Tomcat].[localhost].[/] [] INFO  Initializing Spring embedded WebApplicationContext
+2020/11/03 09:14:27.650 o.s.b.w.s.c.ServletWebServerApplicationContext [] INFO  Root WebApplicationContext: initialization completed in 2729 ms
+2020/11/03 09:14:27.720 o.s.b.web.servlet.RegistrationBean [] INFO  Servlet statViewServlet was not registered (possibly already registered?)
+2020/11/03 09:14:27.724 o.s.b.web.servlet.RegistrationBean [] INFO  Filter webStatFilter was not registered (possibly already registered?)
+2020/11/03 09:14:27.775 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroDialect' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [at.pollux.thymeleaf.shiro.dialect.ShiroDialect]: Factory method 'shiroDialect' threw exception; nested exception is java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+2020/11/03 09:14:27.777 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/11/03 09:14:27.781 o.a.catalina.core.StandardService [] INFO  Stopping service [Tomcat]
+2020/11/03 09:14:27.831 o.s.boot.SpringApplication [] ERROR Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroDialect' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [at.pollux.thymeleaf.shiro.dialect.ShiroDialect]: Factory method 'shiroDialect' threw exception; nested exception is java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ybin.shirodemo.ShiroDemoApplication.main(ShiroDemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [at.pollux.thymeleaf.shiro.dialect.ShiroDialect]: Factory method 'shiroDialect' threw exception; nested exception is java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 25 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at at.pollux.thymeleaf.shiro.dialect.ShiroDialect.<clinit>(ShiroDialect.java:32)
+	at com.ybin.shirodemo.config.ShiroConfig.shiroDialect(ShiroConfig.java:122)
+	at com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$ded59fd5.CGLIB$shiroDialect$2(<generated>)
+	at com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$ded59fd5$$FastClassBySpringCGLIB$$dddad735.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$ded59fd5.shiroDialect(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.thymeleaf.processor.attr.AbstractTextChildModifierAttrProcessor
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 50 common frames omitted
+2020/11/03 09:27:11.864 c.y.shirodemo.ShiroDemoApplication [] INFO  Starting ShiroDemoApplication on DESKTOP-7UAOHGE with PID 19700 (C:\Users\ribo\IdeaProjects\cloudtemplate\shiro-demo\target\classes started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate)
+2020/11/03 09:27:11.866 c.y.shirodemo.ShiroDemoApplication [] INFO  No active profile set, falling back to default profiles: default
+2020/11/03 09:27:11.931 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/11/03 09:27:11.931 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/11/03 09:27:12.787 o.s.d.r.c.RepositoryConfigurationDelegate [] INFO  Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020/11/03 09:27:12.816 o.s.d.r.c.RepositoryConfigurationDelegate [] INFO  Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
+2020/11/03 09:27:13.017 o.s.boot.SpringApplication [] ERROR Application run failed
+java.lang.IllegalStateException: Cannot load configuration class: com.github.yjgbg.jpa.plus.JpaPlusSupport
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:257)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:291)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ybin.shirodemo.ShiroDemoApplication.main(ShiroDemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.UnsupportedClassVersionError: com/github/yjgbg/jpa/plus/JpaPlusSupport has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:469)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:389)
+	... 18 common frames omitted
+2020/11/03 09:27:13.024 o.s.boot.SpringApplication [] WARN  Unable to close ApplicationContext
+org.springframework.beans.factory.CannotLoadBeanClassException: Error loading class [com.github.yjgbg.jpa.plus.JpaPlusSupport] for bean with name 'com.github.yjgbg.jpa.plus.JpaPlusSupport': problem with class file or dependent class; nested exception is java.lang.UnsupportedClassVersionError: com/github/yjgbg/jpa/plus/JpaPlusSupport has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1489)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:648)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1614)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1243)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:880)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:868)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:855)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:806)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ybin.shirodemo.ShiroDemoApplication.main(ShiroDemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.UnsupportedClassVersionError: com/github/yjgbg/jpa/plus/JpaPlusSupport has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:469)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1551)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1478)
+	... 21 common frames omitted
+2020/11/03 09:29:27.829 c.y.shirodemo.ShiroDemoApplication [] INFO  Starting ShiroDemoApplication on DESKTOP-7UAOHGE with PID 12428 (C:\Users\ribo\IdeaProjects\cloudtemplate\shiro-demo\target\classes started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate)
+2020/11/03 09:29:27.832 c.y.shirodemo.ShiroDemoApplication [] INFO  No active profile set, falling back to default profiles: default
+2020/11/03 09:29:27.887 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/11/03 09:29:27.887 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/11/03 09:29:28.665 o.s.d.r.c.RepositoryConfigurationDelegate [] INFO  Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020/11/03 09:29:28.685 o.s.d.r.c.RepositoryConfigurationDelegate [] INFO  Finished Spring Data repository scanning in 12ms. Found 0 JPA repository interfaces.
+2020/11/03 09:29:28.839 o.s.boot.SpringApplication [] ERROR Application run failed
+java.lang.IllegalStateException: Cannot load configuration class: com.github.yjgbg.jpa.plus.JpaPlusSupport
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:257)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:291)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ybin.shirodemo.ShiroDemoApplication.main(ShiroDemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.UnsupportedClassVersionError: com/github/yjgbg/jpa/plus/JpaPlusSupport has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:469)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:389)
+	... 18 common frames omitted
+2020/11/03 09:29:28.844 o.s.boot.SpringApplication [] WARN  Unable to close ApplicationContext
+org.springframework.beans.factory.CannotLoadBeanClassException: Error loading class [com.github.yjgbg.jpa.plus.JpaPlusSupport] for bean with name 'com.github.yjgbg.jpa.plus.JpaPlusSupport': problem with class file or dependent class; nested exception is java.lang.UnsupportedClassVersionError: com/github/yjgbg/jpa/plus/JpaPlusSupport has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1489)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:648)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1614)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1243)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:880)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:868)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:855)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:806)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ybin.shirodemo.ShiroDemoApplication.main(ShiroDemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.UnsupportedClassVersionError: com/github/yjgbg/jpa/plus/JpaPlusSupport has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:469)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1551)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1478)
+	... 21 common frames omitted
+2020/11/03 09:33:29.918 c.y.shirodemo.ShiroDemoApplication [] INFO  Starting ShiroDemoApplication on DESKTOP-7UAOHGE with PID 4704 (C:\Users\ribo\IdeaProjects\cloudtemplate\shiro-demo\target\classes started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate)
+2020/11/03 09:33:29.919 c.y.shirodemo.ShiroDemoApplication [] INFO  No active profile set, falling back to default profiles: default
+2020/11/03 09:33:29.979 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/11/03 09:33:29.980 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/11/03 09:33:30.932 o.s.d.r.c.RepositoryConfigurationDelegate [] INFO  Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020/11/03 09:33:30.959 o.s.d.r.c.RepositoryConfigurationDelegate [] INFO  Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+2020/11/03 09:33:31.191 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'shiroConfig' of type [com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$f310ee48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:31.276 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:31.284 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$764a161f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:31.289 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$5d21ba61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:31.292 c.a.d.s.b.a.DruidDataSourceAutoConfigure [] INFO  Init DruidDataSource
+2020/11/03 09:33:31.369 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:31.375 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:31.402 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'statFilter' of type [com.alibaba.druid.filter.stat.StatFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:31.470 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/11/03 09:33:31.471 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'dataSource' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:31.666 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:31.673 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:31.673 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:31.675 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'userMapper' of type [com.sun.proxy.$Proxy54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:31.677 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'roleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:31.678 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'roleMapper' of type [com.sun.proxy.$Proxy55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:31.681 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'permissionMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:31.682 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'permissionMapper' of type [com.sun.proxy.$Proxy56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:31.682 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'shiroRealm' of type [com.ybin.shirodemo.shiro.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:32.133 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 09:33:32.645 o.s.b.w.e.tomcat.TomcatWebServer [] INFO  Tomcat initialized with port(s): 9090 (http)
+2020/11/03 09:33:32.658 o.a.coyote.http11.Http11NioProtocol [] INFO  Initializing ProtocolHandler ["http-nio-9090"]
+2020/11/03 09:33:32.659 o.a.catalina.core.StandardService [] INFO  Starting service [Tomcat]
+2020/11/03 09:33:32.660 o.a.catalina.core.StandardEngine [] INFO  Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020/11/03 09:33:32.772 o.a.c.c.C.[Tomcat].[localhost].[/] [] INFO  Initializing Spring embedded WebApplicationContext
+2020/11/03 09:33:32.773 o.s.b.w.s.c.ServletWebServerApplicationContext [] INFO  Root WebApplicationContext: initialization completed in 2792 ms
+2020/11/03 09:33:32.958 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/11/03 09:33:33.001 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroDialect' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [at.pollux.thymeleaf.shiro.dialect.ShiroDialect]: Factory method 'shiroDialect' threw exception; nested exception is java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+2020/11/03 09:33:33.001 o.s.o.j.LocalContainerEntityManagerFactoryBean [] INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2020/11/03 09:33:33.048 org.hibernate.Version [] INFO  HHH000412: Hibernate ORM core version 5.4.22.Final
+2020/11/03 09:33:33.249 o.h.annotations.common.Version [] INFO  HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020/11/03 09:33:33.637 org.hibernate.dialect.Dialect [] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020/11/03 09:33:33.876 o.h.e.t.j.p.i.JtaPlatformInitiator [] INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020/11/03 09:33:33.888 o.s.o.j.LocalContainerEntityManagerFactoryBean [] INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020/11/03 09:33:33.896 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/11/03 09:33:33.904 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/11/03 09:33:33.907 o.a.catalina.core.StandardService [] INFO  Stopping service [Tomcat]
+2020/11/03 09:33:33.950 o.s.boot.SpringApplication [] ERROR Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroDialect' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [at.pollux.thymeleaf.shiro.dialect.ShiroDialect]: Factory method 'shiroDialect' threw exception; nested exception is java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ybin.shirodemo.ShiroDemoApplication.main(ShiroDemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [at.pollux.thymeleaf.shiro.dialect.ShiroDialect]: Factory method 'shiroDialect' threw exception; nested exception is java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 25 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at at.pollux.thymeleaf.shiro.dialect.ShiroDialect.<clinit>(ShiroDialect.java:32)
+	at com.ybin.shirodemo.config.ShiroConfig.shiroDialect(ShiroConfig.java:122)
+	at com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$f310ee48.CGLIB$shiroDialect$3(<generated>)
+	at com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$f310ee48$$FastClassBySpringCGLIB$$16bf7d5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$f310ee48.shiroDialect(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.thymeleaf.processor.attr.AbstractTextChildModifierAttrProcessor
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 50 common frames omitted
+2020/11/03 11:38:58.019 c.y.shirodemo.ShiroDemoApplication [] INFO  Starting ShiroDemoApplication on DESKTOP-7UAOHGE with PID 7100 (C:\Users\ribo\IdeaProjects\cloudtemplate\shiro-demo\target\classes started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate)
+2020/11/03 11:38:58.025 c.y.shirodemo.ShiroDemoApplication [] INFO  No active profile set, falling back to default profiles: default
+2020/11/03 11:38:58.138 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/11/03 11:38:58.138 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/11/03 11:38:59.229 o.s.d.r.c.RepositoryConfigurationDelegate [] INFO  Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020/11/03 11:38:59.331 o.s.d.r.c.RepositoryConfigurationDelegate [] INFO  Finished Spring Data repository scanning in 84ms. Found 5 JPA repository interfaces.
+2020/11/03 11:38:59.565 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'shiroConfig' of type [com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$5fa96def] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:38:59.655 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'userService' of type [com.ybin.shirodemo.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:38:59.661 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'roleServiceImpl' of type [com.ybin.shirodemo.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:38:59.666 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'permissionServiceImpl' of type [com.ybin.shirodemo.service.impl.PermissionServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:38:59.666 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'shiroRealm' of type [com.ybin.shirodemo.shiro.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:39:00.046 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:39:00.450 o.s.b.w.e.tomcat.TomcatWebServer [] INFO  Tomcat initialized with port(s): 9090 (http)
+2020/11/03 11:39:00.461 o.a.coyote.http11.Http11NioProtocol [] INFO  Initializing ProtocolHandler ["http-nio-9090"]
+2020/11/03 11:39:00.462 o.a.catalina.core.StandardService [] INFO  Starting service [Tomcat]
+2020/11/03 11:39:00.463 o.a.catalina.core.StandardEngine [] INFO  Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020/11/03 11:39:00.589 o.a.c.c.C.[Tomcat].[localhost].[/] [] INFO  Initializing Spring embedded WebApplicationContext
+2020/11/03 11:39:00.589 o.s.b.w.s.c.ServletWebServerApplicationContext [] INFO  Root WebApplicationContext: initialization completed in 2449 ms
+2020/11/03 11:39:00.705 c.a.d.s.b.a.DruidDataSourceAutoConfigure [] INFO  Init DruidDataSource
+2020/11/03 11:39:00.877 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/11/03 11:39:01.049 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/11/03 11:39:01.058 o.s.s.c.ThreadPoolTaskScheduler [] INFO  Initializing ExecutorService 'taskScheduler'
+2020/11/03 11:39:01.111 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroDialect' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [at.pollux.thymeleaf.shiro.dialect.ShiroDialect]: Factory method 'shiroDialect' threw exception; nested exception is java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+2020/11/03 11:39:01.111 o.s.o.j.LocalContainerEntityManagerFactoryBean [] INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2020/11/03 11:39:01.187 org.hibernate.Version [] INFO  HHH000412: Hibernate ORM core version 5.4.22.Final
+2020/11/03 11:39:01.344 o.h.annotations.common.Version [] INFO  HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020/11/03 11:39:01.668 org.hibernate.dialect.Dialect [] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020/11/03 11:39:02.708 o.h.e.t.j.p.i.JtaPlatformInitiator [] INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020/11/03 11:39:02.718 o.s.o.j.LocalContainerEntityManagerFactoryBean [] INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020/11/03 11:39:02.721 o.s.s.c.ThreadPoolTaskScheduler [] INFO  Shutting down ExecutorService 'taskScheduler'
+2020/11/03 11:39:02.721 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/11/03 11:39:02.729 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/11/03 11:39:02.731 o.a.catalina.core.StandardService [] INFO  Stopping service [Tomcat]
+2020/11/03 11:39:02.768 o.s.boot.SpringApplication [] ERROR Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroDialect' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [at.pollux.thymeleaf.shiro.dialect.ShiroDialect]: Factory method 'shiroDialect' threw exception; nested exception is java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ybin.shirodemo.ShiroDemoApplication.main(ShiroDemoApplication.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [at.pollux.thymeleaf.shiro.dialect.ShiroDialect]: Factory method 'shiroDialect' threw exception; nested exception is java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 25 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at at.pollux.thymeleaf.shiro.dialect.ShiroDialect.<clinit>(ShiroDialect.java:32)
+	at com.ybin.shirodemo.config.ShiroConfig.shiroDialect(ShiroConfig.java:122)
+	at com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$5fa96def.CGLIB$shiroDialect$3(<generated>)
+	at com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$5fa96def$$FastClassBySpringCGLIB$$fb82455d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$5fa96def.shiroDialect(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.thymeleaf.processor.attr.AbstractTextChildModifierAttrProcessor
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 50 common frames omitted
+2020/11/03 11:41:30.923 c.y.shirodemo.ShiroDemoApplication [] INFO  Starting ShiroDemoApplication on DESKTOP-7UAOHGE with PID 18408 (C:\Users\ribo\IdeaProjects\cloudtemplate\shiro-demo\target\classes started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate)
+2020/11/03 11:41:30.925 c.y.shirodemo.ShiroDemoApplication [] INFO  No active profile set, falling back to default profiles: default
+2020/11/03 11:41:30.994 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/11/03 11:41:30.994 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/11/03 11:41:31.677 o.s.d.r.c.RepositoryConfigurationDelegate [] INFO  Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020/11/03 11:41:31.760 o.s.d.r.c.RepositoryConfigurationDelegate [] INFO  Finished Spring Data repository scanning in 68ms. Found 5 JPA repository interfaces.
+2020/11/03 11:41:31.946 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'shiroConfig' of type [com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$c5fe9746] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:41:32.018 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'userService' of type [com.ybin.shirodemo.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:41:32.023 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'roleServiceImpl' of type [com.ybin.shirodemo.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:41:32.029 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'permissionServiceImpl' of type [com.ybin.shirodemo.service.impl.PermissionServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:41:32.029 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'shiroRealm' of type [com.ybin.shirodemo.shiro.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:41:32.377 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:41:32.704 o.s.b.w.e.tomcat.TomcatWebServer [] INFO  Tomcat initialized with port(s): 9090 (http)
+2020/11/03 11:41:32.712 o.a.coyote.http11.Http11NioProtocol [] INFO  Initializing ProtocolHandler ["http-nio-9090"]
+2020/11/03 11:41:32.712 o.a.catalina.core.StandardService [] INFO  Starting service [Tomcat]
+2020/11/03 11:41:32.712 o.a.catalina.core.StandardEngine [] INFO  Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020/11/03 11:41:32.812 o.a.c.c.C.[Tomcat].[localhost].[/] [] INFO  Initializing Spring embedded WebApplicationContext
+2020/11/03 11:41:32.813 o.s.b.w.s.c.ServletWebServerApplicationContext [] INFO  Root WebApplicationContext: initialization completed in 1818 ms
+2020/11/03 11:41:32.905 c.a.d.s.b.a.DruidDataSourceAutoConfigure [] INFO  Init DruidDataSource
+2020/11/03 11:41:33.035 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/11/03 11:41:33.175 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/11/03 11:41:33.183 o.s.s.c.ThreadPoolTaskScheduler [] INFO  Initializing ExecutorService 'taskScheduler'
+2020/11/03 11:41:33.222 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroDialect' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [at.pollux.thymeleaf.shiro.dialect.ShiroDialect]: Factory method 'shiroDialect' threw exception; nested exception is java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+2020/11/03 11:41:33.222 o.s.o.j.LocalContainerEntityManagerFactoryBean [] INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2020/11/03 11:41:33.265 org.hibernate.Version [] INFO  HHH000412: Hibernate ORM core version 5.4.22.Final
+2020/11/03 11:41:33.375 o.h.annotations.common.Version [] INFO  HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020/11/03 11:41:33.613 org.hibernate.dialect.Dialect [] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020/11/03 11:41:34.222 o.h.e.t.j.p.i.JtaPlatformInitiator [] INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020/11/03 11:41:34.229 o.s.o.j.LocalContainerEntityManagerFactoryBean [] INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020/11/03 11:41:34.232 o.s.s.c.ThreadPoolTaskScheduler [] INFO  Shutting down ExecutorService 'taskScheduler'
+2020/11/03 11:41:34.232 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/11/03 11:41:34.237 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/11/03 11:41:34.239 o.a.catalina.core.StandardService [] INFO  Stopping service [Tomcat]
+2020/11/03 11:41:34.265 o.s.boot.SpringApplication [] ERROR Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroDialect' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [at.pollux.thymeleaf.shiro.dialect.ShiroDialect]: Factory method 'shiroDialect' threw exception; nested exception is java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ybin.shirodemo.ShiroDemoApplication.main(ShiroDemoApplication.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [at.pollux.thymeleaf.shiro.dialect.ShiroDialect]: Factory method 'shiroDialect' threw exception; nested exception is java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 25 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at at.pollux.thymeleaf.shiro.dialect.ShiroDialect.<clinit>(ShiroDialect.java:32)
+	at com.ybin.shirodemo.config.ShiroConfig.shiroDialect(ShiroConfig.java:122)
+	at com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$c5fe9746.CGLIB$shiroDialect$4(<generated>)
+	at com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$c5fe9746$$FastClassBySpringCGLIB$$90dbf156.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$c5fe9746.shiroDialect(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.thymeleaf.processor.attr.AbstractTextChildModifierAttrProcessor
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 50 common frames omitted
+2020/11/03 11:48:58.995 c.y.shirodemo.ShiroDemoApplication [] INFO  Starting ShiroDemoApplication on DESKTOP-7UAOHGE with PID 5384 (C:\Users\ribo\IdeaProjects\cloudtemplate\shiro-demo\target\classes started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate)
+2020/11/03 11:48:58.998 c.y.shirodemo.ShiroDemoApplication [] INFO  No active profile set, falling back to default profiles: default
+2020/11/03 11:48:59.100 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/11/03 11:48:59.100 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/11/03 11:49:00.148 o.s.d.r.c.RepositoryConfigurationDelegate [] INFO  Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020/11/03 11:49:00.230 o.s.d.r.c.RepositoryConfigurationDelegate [] INFO  Finished Spring Data repository scanning in 67ms. Found 5 JPA repository interfaces.
+2020/11/03 11:49:00.423 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'shiroConfig' of type [com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$f0562da6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:49:00.497 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'userService' of type [com.ybin.shirodemo.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:49:00.503 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'roleServiceImpl' of type [com.ybin.shirodemo.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:49:00.508 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'permissionServiceImpl' of type [com.ybin.shirodemo.service.impl.PermissionServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:49:00.508 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'shiroRealm' of type [com.ybin.shirodemo.shiro.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:49:00.871 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] INFO  Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/11/03 11:49:01.198 o.s.b.w.e.tomcat.TomcatWebServer [] INFO  Tomcat initialized with port(s): 9090 (http)
+2020/11/03 11:49:01.206 o.a.coyote.http11.Http11NioProtocol [] INFO  Initializing ProtocolHandler ["http-nio-9090"]
+2020/11/03 11:49:01.206 o.a.catalina.core.StandardService [] INFO  Starting service [Tomcat]
+2020/11/03 11:49:01.207 o.a.catalina.core.StandardEngine [] INFO  Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020/11/03 11:49:01.310 o.a.c.c.C.[Tomcat].[localhost].[/] [] INFO  Initializing Spring embedded WebApplicationContext
+2020/11/03 11:49:01.310 o.s.b.w.s.c.ServletWebServerApplicationContext [] INFO  Root WebApplicationContext: initialization completed in 2209 ms
+2020/11/03 11:49:01.403 c.a.d.s.b.a.DruidDataSourceAutoConfigure [] INFO  Init DruidDataSource
+2020/11/03 11:49:01.543 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} inited
+2020/11/03 11:49:01.687 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Initializing ExecutorService 'applicationTaskExecutor'
+2020/11/03 11:49:01.696 o.s.s.c.ThreadPoolTaskScheduler [] INFO  Initializing ExecutorService 'taskScheduler'
+2020/11/03 11:49:01.735 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroDialect' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [at.pollux.thymeleaf.shiro.dialect.ShiroDialect]: Factory method 'shiroDialect' threw exception; nested exception is java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+2020/11/03 11:49:01.736 o.s.o.j.LocalContainerEntityManagerFactoryBean [] INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2020/11/03 11:49:01.776 org.hibernate.Version [] INFO  HHH000412: Hibernate ORM core version 5.4.22.Final
+2020/11/03 11:49:01.885 o.h.annotations.common.Version [] INFO  HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020/11/03 11:49:02.148 org.hibernate.dialect.Dialect [] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020/11/03 11:49:02.763 o.h.e.t.j.p.i.JtaPlatformInitiator [] INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020/11/03 11:49:02.771 o.s.o.j.LocalContainerEntityManagerFactoryBean [] INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020/11/03 11:49:02.775 o.s.s.c.ThreadPoolTaskScheduler [] INFO  Shutting down ExecutorService 'taskScheduler'
+2020/11/03 11:49:02.775 o.s.s.c.ThreadPoolTaskExecutor [] INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+2020/11/03 11:49:02.781 c.a.druid.pool.DruidDataSource [] INFO  {dataSource-1} closed
+2020/11/03 11:49:02.784 o.a.catalina.core.StandardService [] INFO  Stopping service [Tomcat]
+2020/11/03 11:49:02.816 o.s.boot.SpringApplication [] ERROR Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroDialect' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [at.pollux.thymeleaf.shiro.dialect.ShiroDialect]: Factory method 'shiroDialect' threw exception; nested exception is java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ybin.shirodemo.ShiroDemoApplication.main(ShiroDemoApplication.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [at.pollux.thymeleaf.shiro.dialect.ShiroDialect]: Factory method 'shiroDialect' threw exception; nested exception is java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 25 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/thymeleaf/processor/attr/AbstractTextChildModifierAttrProcessor
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at at.pollux.thymeleaf.shiro.dialect.ShiroDialect.<clinit>(ShiroDialect.java:32)
+	at com.ybin.shirodemo.config.ShiroConfig.shiroDialect(ShiroConfig.java:123)
+	at com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$f0562da6.CGLIB$shiroDialect$1(<generated>)
+	at com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$f0562da6$$FastClassBySpringCGLIB$$69ca0857.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.ybin.shirodemo.config.ShiroConfig$$EnhancerBySpringCGLIB$$f0562da6.shiroDialect(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.thymeleaf.processor.attr.AbstractTextChildModifierAttrProcessor
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 50 common frames omitted
+2020/11/03 13:47:41.170 c.y.shirodemo.ShiroDemoApplication [] INFO  Starting ShiroDemoApplication on DESKTOP-7UAOHGE with PID 15748 (C:\Users\ribo\IdeaProjects\cloudtemplate\shiro-demo\target\classes started by ribo in C:\Users\ribo\IdeaProjects\cloudtemplate)
+2020/11/03 13:47:41.173 c.y.shirodemo.ShiroDemoApplication [] INFO  No active profile set, falling back to default profiles: default
+2020/11/03 13:47:41.238 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/11/03 13:47:41.239 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [] INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/11/03 13:47:41.739 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'shiroRealm' defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=shiroConfig; factoryMethodName=shiroRealm; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class]] for bean 'shiroRealm': There is already [Generic bean: class [com.ybin.shirodemo.shiro.ShiroRealm]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\ribo\IdeaProjects\cloudtemplate\shiro-demo\target\classes\com\ybin\shirodemo\shiro\ShiroRealm.class]] bound.
+2020/11/03 13:47:41.770 o.s.b.d.LoggingFailureAnalysisReporter [] ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'shiroRealm', defined in class path resource [com/ybin/shirodemo/config/ShiroConfig.class], could not be registered. A bean with that name has already been defined in file [C:\Users\ribo\IdeaProjects\cloudtemplate\shiro-demo\target\classes\com\ybin\shirodemo\shiro\ShiroRealm.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
