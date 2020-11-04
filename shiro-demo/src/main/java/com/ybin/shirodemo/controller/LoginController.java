@@ -84,7 +84,7 @@ public class LoginController {
             String exception = (String) request.getAttribute("shiroLoginFailure");
             model.addAttribute("msg",e.getMessage());
             //返回登录页面
-            return "redirect:/index";
+            return "login";
         }
     }
 
