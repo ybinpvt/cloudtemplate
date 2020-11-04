@@ -2,6 +2,7 @@ package com.ybin.shirodemo.config;
 
 import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
 import com.ybin.shirodemo.shiro.CommonShiroRealm;
+import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.codec.Base64;
 import org.apache.shiro.mgt.DefaultSessionStorageEvaluator;
 import org.apache.shiro.mgt.DefaultSubjectDAO;
@@ -18,6 +19,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 //import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
 //import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
 //import org.springframework.boot.web.servlet.ErrorPage;
+import org.springframework.beans.factory.config.MethodInvokingFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
@@ -100,6 +102,8 @@ public class ShiroConfig {
 
         //配置记住我 参考博客：
         securityManager.setRememberMeManager(rememberMeManager());
+        //配置 ehcache缓存管理器 参考博客：
+        securityManager.setCacheManager(ehCacheManager());
         //配置 redis缓存管理器 参考博客：
         //securityManager.setCacheManager(getEhCacheManager());
         //配置自定义session管理，使用redis 参考博客：
@@ -140,7 +144,17 @@ public class ShiroConfig {
      */
     @Bean
     public CommonShiroRealm shiroRealm(){
-        return new CommonShiroRealm();
+        CommonShiroRealm commonShiroRealm = new CommonShiroRealm();
+        commonShiroRealm.setCachingEnabled(true);
+        //启用身份验证缓存，即缓存AuthenticationInfo信息，默认false
+        commonShiroRealm.setAuthenticationCachingEnabled(true);
+        //缓存AuthenticationInfo信息的缓存名称 在ehcache-shiro.xml中有对应缓存的配置
+        commonShiroRealm.setAuthenticationCacheName("authenticationCache");
+        //启用授权缓存，即缓存AuthorizationInfo信息，默认false
+        commonShiroRealm.setAuthorizationCachingEnabled(true);
+        //缓存AuthorizationInfo信息的缓存名称  在ehcache-shiro.xml中有对应缓存的配置
+        commonShiroRealm.setAuthorizationCacheName("authorizationCache");
+        return commonShiroRealm;
     }
 
     /**
@@ -242,6 +256,31 @@ public class ShiroConfig {
         //对应前端的checkbox的name = rememberMe
         formAuthenticationFilter.setRememberMeParam("rememberMe");
         return formAuthenticationFilter;
+    }
+
+    /**
+     * shiro缓存管理器;
+     * 需要添加到securityManager中
+     * @return
+     */
+    @Bean
+    public EhCacheManager ehCacheManager(){
+        EhCacheManager cacheManager = new EhCacheManager();
+        cacheManager.setCacheManagerConfigFile("classpath:config/ehcache-shiro.xml");
+        return cacheManager;
+    }
+
+    /**
+     * 让某个实例的某个方法的返回值注入为Bean的实例
+     * Spring静态注入
+     * @return
+     */
+    @Bean
+    public MethodInvokingFactoryBean getMethodInvokingFactoryBean(){
+        MethodInvokingFactoryBean factoryBean = new MethodInvokingFactoryBean();
+        factoryBean.setStaticMethod("org.apache.shiro.SecurityUtils.setSecurityManager");
+        factoryBean.setArguments(new Object[]{securityManager()});
+        return factoryBean;
     }
 
 }
