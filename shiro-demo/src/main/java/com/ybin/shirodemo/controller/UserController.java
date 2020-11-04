@@ -60,8 +60,8 @@ public class UserController {
     @RequestMapping(value = "/del",method = RequestMethod.GET)
     @ResponseBody
     public String del(Model model) {
-        userService.delete("wangsaichao");
-        return "删除用户名为wangsaichao用户成功";
+        userService.delete("zhangsan");
+        return "删除用户名为zhangsan用户成功";
 
     }
 
