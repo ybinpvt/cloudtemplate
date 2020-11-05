@@ -1,9 +1,14 @@
 package com.ybin.shirodemo.controller;
 
+import com.ybin.shirodemo.config.RetryLimitHashedCredentialsMatcher;
 import com.ybin.shirodemo.entity.User;
 import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.IncorrectCredentialsException;
+import org.apache.shiro.authc.LockedAccountException;
+import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +26,8 @@ import javax.servlet.http.HttpSession;
 
 @Controller
 public class LoginController {
+    @Autowired
+    RetryLimitHashedCredentialsMatcher retryLimitHashedCredentialsMatcher;
 
     /**
      * 访问项目根路径
@@ -71,7 +78,7 @@ public class LoginController {
         UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken(username,password,rememberMe);
         //UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken(username,password);
         Subject subject = SecurityUtils.getSubject();
-        try {
+        /*try {
             //登录操作
             subject.login(usernamePasswordToken);
             User user=(User) subject.getPrincipal();
@@ -84,6 +91,25 @@ public class LoginController {
             String exception = (String) request.getAttribute("shiroLoginFailure");
             model.addAttribute("msg",e.getMessage());
             //返回登录页面
+            return "login";
+        }*/
+        /** 修改登录方法改为登录之后,重定向到/index */
+        try {
+            //登录操作
+            subject.login(usernamePasswordToken);
+            return "redirect:index";
+        } catch (Exception e) {
+            //登录失败从request中获取shiro处理的异常信息，ShiroLoginFailure就是shiro异常类的全类名
+            String exception = (String) request.getAttribute("ShiroLoginFailure");
+            if (e instanceof UnknownAccountException) {
+                model.addAttribute("msg", "用户名或密码错误！");
+            }
+            if (e instanceof IncorrectCredentialsException) {
+                model.addAttribute("msg", "用户名或密码错误！");
+            }
+            if (e instanceof LockedAccountException) {
+                model.addAttribute("msg", "账号已被锁定，请联系管理员！");
+            }
             return "login";
         }
     }
@@ -123,6 +149,18 @@ public class LoginController {
     @RequestMapping("/unauthorized")
     public String unauthorized(HttpSession session, Model model) {
         return "unauthorized";
+    }
+
+    /**
+     * 解除admin 用户的限制登录
+     * 写死的 方便测试
+     * @return
+     */
+    @RequestMapping("/unlockAccount")
+    public String unlockAccount(Model model){
+        model.addAttribute("msg","用户解锁成功");
+        retryLimitHashedCredentialsMatcher.unlockAccount("admin");
+        return "login";
     }
 
 }

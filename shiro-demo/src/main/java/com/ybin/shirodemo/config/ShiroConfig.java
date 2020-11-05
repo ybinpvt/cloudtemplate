@@ -67,7 +67,7 @@ public class ShiroConfig {
         //必须设置 SecurityManager,Shiro的核心安全接口
         shiroFilterFactoryBean.setSecurityManager(securityManager);
         //这里的/login是后台的接口名,非页面，如果不设置默认会自动寻找Web工程根目录下的"/login.jsp"页面
-        shiroFilterFactoryBean.setLoginUrl("/login");
+        shiroFilterFactoryBean.setLoginUrl("/");
         //这里的/index是后台的接口名,非页面,登录成功后要跳转的链接
         shiroFilterFactoryBean.setSuccessUrl("/index");
         //未授权界面,该配置无效，并不会进行页面跳转
@@ -85,6 +85,7 @@ public class ShiroConfig {
         //配置不登录可以访问的资源，anon 表示资源都可以匿名访问
         filterChainDefinitionMap.put("/login", "kickout,anon");
         filterChainDefinitionMap.put("/", "anon");
+        filterChainDefinitionMap.put("/unlockAccount", "anon");
         filterChainDefinitionMap.put("/css/**", "anon");
         filterChainDefinitionMap.put("/js/**", "anon");
         filterChainDefinitionMap.put("/img/**", "anon");
@@ -164,6 +165,10 @@ public class ShiroConfig {
         commonShiroRealm.setAuthorizationCachingEnabled(true);
         //缓存AuthorizationInfo信息的缓存名称  在ehcache-shiro.xml中有对应缓存的配置
         commonShiroRealm.setAuthorizationCacheName("authorizationCache");
+
+        //配置自定义密码比较器
+        commonShiroRealm.setCredentialsMatcher(retryLimitHashedCredentialsMatcher());
+
         return commonShiroRealm;
     }
 
@@ -403,5 +408,24 @@ public class ShiroConfig {
         //被踢出后重定向到的地址；
         kickoutSessionControlFilter.setKickoutUrl("/login?kickout=1");
         return kickoutSessionControlFilter;
+    }
+
+    /**
+     * 配置密码比较器
+     * @return
+     */
+    @Bean("credentialsMatcher")
+    public RetryLimitHashedCredentialsMatcher retryLimitHashedCredentialsMatcher(){
+        RetryLimitHashedCredentialsMatcher retryLimitHashedCredentialsMatcher = new RetryLimitHashedCredentialsMatcher(ehCacheManager());
+
+        //如果密码加密,可以打开下面配置
+        //加密算法的名称
+        //retryLimitHashedCredentialsMatcher.setHashAlgorithmName("MD5");
+        //配置加密的次数
+        //retryLimitHashedCredentialsMatcher.setHashIterations(1024);
+        //是否存储为16进制
+        //retryLimitHashedCredentialsMatcher.setStoredCredentialsHexEncoded(true);
+
+        return retryLimitHashedCredentialsMatcher;
     }
 }

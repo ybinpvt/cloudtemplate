@@ -70,9 +70,10 @@ public class CommonShiroRealm extends AuthorizingRealm {
         if (user == null) {
             throw new UnknownAccountException("用户名或密码错误！");
         }
-        if (!password.equals(user.getPassword())) {
+        //这里将密码对比注释掉，否则无法锁定；要将 密码对比 交给 密码比较器
+        /*if (!password.equals(user.getPassword())) {
             throw new IncorrectCredentialsException("用户名或密码错误！");
-        }
+        }*/
         if ("1".equals(user.getState())) {
             throw new LockedAccountException("账号已被锁定,请联系管理员！");
         }
