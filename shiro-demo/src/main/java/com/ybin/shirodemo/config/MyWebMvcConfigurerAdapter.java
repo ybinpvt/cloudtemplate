@@ -13,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  */
 
 @Configuration
-public class MyWebMvcConfig extends WebMvcConfigurerAdapter {
+public class MyWebMvcConfigurerAdapter extends WebMvcConfigurerAdapter {
     /**
      * 设置自己的path匹配规则
      * @param configurer

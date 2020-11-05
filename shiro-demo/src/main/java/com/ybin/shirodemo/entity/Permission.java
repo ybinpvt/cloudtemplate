@@ -20,9 +20,7 @@ import java.util.Set;
 @Entity
 @Table(name = "shiro_permission")
 public class Permission extends BaseEntity {
-    /**
-     * 父编号,本权限可能是该父编号权限的子权限
-     */
+
     @Column(columnDefinition="bigint COMMENT '父编号,本权限可能是该父编号权限的子权限'")
     private Long parent_id;
     @Column(columnDefinition = "varchar(20) COMMENT '父编号列表'")
