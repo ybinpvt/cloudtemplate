@@ -13,6 +13,9 @@
     用户名：<input type="text" name="username"/><br/>
     密&nbsp;&nbsp;&nbsp;码：<input type="password" name="password"/><br/>
     <input type="checkbox" name="rememberMe">记住我<br/>
+    <img alt="验证码" th:src="@{/Captcha.jpg}" title="点击更换" id="captcha_img"/>
+    (看不清<a href="javascript:void(0)" onclick="javascript:refreshCaptcha()">换一张</a>)<br/>
+    验证码：<input type="text" name="captcha"/><br/>
     <input type="submit" value="提交"/><br/>
     <button><a href="/unlockAccount">解锁admin用户</a></button>
 </form>
@@ -26,5 +29,9 @@
         }
     }
     window.onload=kickout();
+
+    function refreshCaptcha(){
+        $("#captcha_img").attr("src","/Captcha.jpg?id=" + new Date() + Math.floor(Math.random()*24));
+    }
 </script>
 </html>

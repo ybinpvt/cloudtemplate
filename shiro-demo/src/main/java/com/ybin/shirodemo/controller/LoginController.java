@@ -71,7 +71,17 @@ public class LoginController {
      * @return
      */
     @RequestMapping(value = "/login",method = RequestMethod.POST)
-    public String loginUser(HttpServletRequest request, String username, String password, boolean rememberMe, Model model, HttpSession session) {
+    public String loginUser(HttpServletRequest request,
+                            String username, String password, boolean rememberMe,
+                            String captcha, Model model, HttpSession session) {
+        //校验验证码
+        //session中的验证码
+        String sessionCaptcha = (String) SecurityUtils.getSubject().getSession().getAttribute(CaptchaController.KEY_CAPTCHA);
+        if (null == captcha || !captcha.equalsIgnoreCase(sessionCaptcha)) {
+            model.addAttribute("msg","验证码错误！");
+            return "login";
+        }
+
         //对密码进行加密
         //password=new SimpleHash("md5", password, ByteSource.Util.bytes(username.toLowerCase() + "shiro"),2).toHex();
         //如果有点击  记住我

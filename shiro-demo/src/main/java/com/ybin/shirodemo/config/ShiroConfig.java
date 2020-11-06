@@ -86,6 +86,7 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/login", "kickout,anon");
         filterChainDefinitionMap.put("/", "anon");
         filterChainDefinitionMap.put("/unlockAccount", "anon");
+        filterChainDefinitionMap.put("/Captcha.jpg","anon");
         filterChainDefinitionMap.put("/css/**", "anon");
         filterChainDefinitionMap.put("/js/**", "anon");
         filterChainDefinitionMap.put("/img/**", "anon");
