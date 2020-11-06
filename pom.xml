@@ -20,7 +20,7 @@
         <module>cas-client-spring-tradition</module>
         <module>cas-client-spring-boot</module>
 
-        <module>shiro-demo</module>
+        <module>shiro-ehcache</module>
     </modules>
 
 
