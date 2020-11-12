@@ -10,10 +10,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableJpaAuditing  //开启jpa审计功能@CreateDate、@CreatedBy、@LastModifiedDate、@LastModifiedBy
 @EnableScheduling
 @SpringBootApplication
-public class ShiroDemoApplication {
+public class ShiroEhcacheApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ShiroDemoApplication.class, args);
+        SpringApplication.run(ShiroEhcacheApplication.class, args);
     }
 
 }

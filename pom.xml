@@ -21,6 +21,7 @@
         <module>cas-client-spring-boot</module>
 
         <module>shiro-ehcache</module>
+        <module>shiro-redis</module>
     </modules>
 
 
