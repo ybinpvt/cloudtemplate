@@ -1,6 +1,6 @@
 package com.ybin.shiroredis.controller;
 
-import com.ybin.shiroredis.config.RetryLimitHashedCredentialsMatcher;
+import com.ybin.shiroredis.config.shiro.RetryLimitHashedCredentialsMatcher;
 import com.ybin.shiroredis.entity.User;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.IncorrectCredentialsException;

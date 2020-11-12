@@ -15,7 +15,7 @@ public interface UserService {
      * 添加用户
      * @param user
      */
-    void insert(User user);
+    void save(User user);
 
     /**
      * 根据用户名删除用户信息

@@ -22,7 +22,7 @@ spring:
     generate-ddl: true
   redis:
     host: 10.10.2.92
-    port: 6379
+    port: 6378
 #    password:
 
 #mybatis:

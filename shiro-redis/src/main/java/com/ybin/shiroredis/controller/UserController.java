@@ -4,7 +4,7 @@ import com.ybin.shiroredis.entity.User;
 import com.ybin.shiroredis.service.RolePermissionService;
 import com.ybin.shiroredis.service.RoleService;
 import com.ybin.shiroredis.service.UserService;
-import com.ybin.shiroredis.shiro.CommonShiroRealm;
+import com.ybin.shiroredis.config.shiro.ShiroRealm;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
@@ -46,7 +46,7 @@ public class UserController {
         user.setName("ybin");
         user.setId_card_num("222");
         user.setUsername("ybin");
-        userService.insert(user);
+        userService.save(user);
         return "创建用户成功";
 
     }
@@ -89,7 +89,7 @@ public class UserController {
         rolePermissionService.addRolePermission(1L,3L);
         //添加成功之后 清除缓存
         DefaultWebSecurityManager securityManager = (DefaultWebSecurityManager) SecurityUtils.getSecurityManager();
-        CommonShiroRealm shiroRealm = (CommonShiroRealm) securityManager.getRealms().iterator().next();
+        ShiroRealm shiroRealm = (ShiroRealm) securityManager.getRealms().iterator().next();
         //清除权限 相关的缓存
         shiroRealm.clearAllCache();
         return "给admin用户添加 userInfo:del 权限成功";
@@ -109,7 +109,7 @@ public class UserController {
         rolePermissionService.delRolePermission(1L,3L);
         //添加成功之后 清除缓存
         DefaultWebSecurityManager securityManager = (DefaultWebSecurityManager)SecurityUtils.getSecurityManager();
-        CommonShiroRealm shiroRealm = (CommonShiroRealm) securityManager.getRealms().iterator().next();
+        ShiroRealm shiroRealm = (ShiroRealm) securityManager.getRealms().iterator().next();
         //清除权限 相关的缓存
         shiroRealm.clearAllCache();
 

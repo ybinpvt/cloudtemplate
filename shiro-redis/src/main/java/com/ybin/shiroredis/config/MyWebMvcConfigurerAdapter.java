@@ -1,9 +1,13 @@
 package com.ybin.shiroredis.config;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.resource.ResourceUrlProvider;
+import org.springframework.web.servlet.resource.ResourceUrlProviderExposingInterceptor;
 
 /**
  * @author ybin
@@ -14,6 +18,23 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @Configuration
 public class MyWebMvcConfigurerAdapter extends WebMvcConfigurerAdapter {
+
+    @Bean
+    public ResourceUrlProvider resourceUrlProvider(){
+        ResourceUrlProvider resourceUrlProvider = new ResourceUrlProvider();
+        return resourceUrlProvider;
+    }
+
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        // 多个拦截器组成一个拦截器链
+        // addPathPatterns 用于添加拦截规则
+        // excludePathPatterns 用户排除拦截
+        registry.addInterceptor(new ResourceUrlProviderExposingInterceptor(resourceUrlProvider())).addPathPatterns("/**");
+        super.addInterceptors(registry);
+    }
+
     /**
      * 设置自己的path匹配规则
      * @param configurer
@@ -37,7 +58,8 @@ public class MyWebMvcConfigurerAdapter extends WebMvcConfigurerAdapter {
      */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/templates/**")
-                .addResourceLocations("classpath:/templates/");
+        registry.addResourceHandler("/static/**")
+                .addResourceLocations("classpath:/static/");
     }
+
 }

@@ -1,4 +1,4 @@
-package com.ybin.shiroredis.config;
+package com.ybin.shiroredis.config.shiro;
 
 import org.apache.shiro.session.Session;
 import org.apache.shiro.session.SessionListener;

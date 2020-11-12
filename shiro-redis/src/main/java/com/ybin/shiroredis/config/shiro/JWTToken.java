@@ -1,4 +1,4 @@
-package com.ybin.shiroredis.shiro;
+package com.ybin.shiroredis.config.shiro;
 
 import org.apache.shiro.authc.AuthenticationToken;
 

@@ -1,4 +1,4 @@
-package com.ybin.shiroredis.shiro;
+package com.ybin.shiroredis.config.shiro;
 
 import org.apache.shiro.web.filter.authc.BasicHttpAuthenticationFilter;
 import org.slf4j.Logger;
@@ -35,7 +35,7 @@ public class JWTFilter extends BasicHttpAuthenticationFilter {
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
         String authorization = httpServletRequest.getHeader("Authorization");
 
-        com.ybin.shiroredis.shiro.JWTToken token = new com.ybin.shiroredis.shiro.JWTToken(authorization);
+        JWTToken token = new JWTToken(authorization);
         // 提交给realm进行登入，如果错误他会抛出异常并被捕获
         getSubject(request, response).login(token);
         // 如果没有抛出异常则代表登入成功，返回true

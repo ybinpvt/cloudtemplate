@@ -1,32 +1,26 @@
 package com.ybin.shiroredis.config;
 
-import com.ybin.shiroredis.shiro.CommonShiroRealm;
-//import org.apache.shiro.cache.ehcache.EhCacheManager;
+import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
+import com.ybin.shiroredis.config.shiro.*;
 import org.apache.shiro.codec.Base64;
-import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.session.SessionListener;
 import org.apache.shiro.session.mgt.SessionManager;
-//import org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO;
 import org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator;
 import org.apache.shiro.session.mgt.eis.SessionDAO;
 import org.apache.shiro.session.mgt.eis.SessionIdGenerator;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
+import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.web.filter.authc.FormAuthenticationFilter;
 import org.apache.shiro.web.mgt.CookieRememberMeManager;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.apache.shiro.web.servlet.SimpleCookie;
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
-import org.crazycake.shiro.RedisCacheManager;
-import org.crazycake.shiro.RedisManager;
-import org.crazycake.shiro.RedisSessionDAO;
-//import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.MethodInvokingFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-//import org.springframework.context.annotation.DependsOn;
 import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
 
 import javax.servlet.Filter;
@@ -34,10 +28,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.Properties;
-
-//import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
-//import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
-//import org.springframework.boot.web.servlet.ErrorPage;
 
 /**
  * @author ybin
@@ -76,7 +66,7 @@ public class ShiroConfig {
         //自定义拦截器限制并发人数,参考博客：
         LinkedHashMap<String, Filter> filtersMap = new LinkedHashMap<>();
         //限制同一帐号同时在线的个数
-        //filtersMap.put("kickout", kickoutSessionControlFilter());
+        filtersMap.put("kickout", kickoutSessionControlFilter());
         //统计登录人数
         shiroFilterFactoryBean.setFilters(filtersMap);
 
@@ -100,7 +90,7 @@ public class ShiroConfig {
         //filterChainDefinitionMap.put("/userInfo/del", "perms[\"userInfo:del\"]");
         //其他资源都需要认证  authc 表示需要认证才能进行访问 user表示配置记住我或认证通过可以访问的地址
         //filterChainDefinitionMap.put("/**", "authc");
-        filterChainDefinitionMap.put("/**", "user");
+        filterChainDefinitionMap.put("/**", "kickout,user");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
         return shiroFilterFactoryBean;
     }
@@ -153,8 +143,8 @@ public class ShiroConfig {
      * @return
      */
     @Bean
-    public CommonShiroRealm shiroRealm(){
-        CommonShiroRealm commonShiroRealm = new CommonShiroRealm();
+    public ShiroRealm shiroRealm(){
+        ShiroRealm commonShiroRealm = new ShiroRealm();
         commonShiroRealm.setCachingEnabled(true);
         //启用身份验证缓存，即缓存AuthenticationInfo信息，默认false
         commonShiroRealm.setAuthenticationCachingEnabled(true);
@@ -166,7 +156,7 @@ public class ShiroConfig {
         commonShiroRealm.setAuthorizationCacheName("authorizationCache");
 
         //配置自定义密码比较器
-        //commonShiroRealm.setCredentialsMatcher(retryLimitHashedCredentialsMatcher());
+        commonShiroRealm.setCredentialsMatcher(retryLimitHashedCredentialsMatcher());
 
         return commonShiroRealm;
     }
@@ -311,9 +301,6 @@ public class ShiroConfig {
     @Bean
     public RedisManager redisManager(){
         RedisManager redisManager = new RedisManager();
-        redisManager.setHost("10.10.2.92");
-        redisManager.setPort(6378);
-//        redisManager.setPassword("123456");
         return redisManager;
     }
 
@@ -348,6 +335,12 @@ public class ShiroConfig {
     @Bean
     public SessionIdGenerator sessionIdGenerator() {
         return new JavaUuidSessionIdGenerator();
+    }
+
+    @Bean("sessionFactory")
+    public ShiroSessionFactory sessionFactory(){
+        ShiroSessionFactory sessionFactory = new ShiroSessionFactory();
+        return sessionFactory;
     }
 
     /**
@@ -431,13 +424,13 @@ public class ShiroConfig {
      * 并发登录控制
      * @return
      */
-    /*@Bean
+    @Bean
     public KickoutSessionControlFilter kickoutSessionControlFilter(){
         KickoutSessionControlFilter kickoutSessionControlFilter = new KickoutSessionControlFilter();
         //用于根据会话ID，获取会话进行踢出操作的；
         kickoutSessionControlFilter.setSessionManager(sessionManager());
         //使用cacheManager获取相应的cache来缓存用户登录的会话；用于保存用户—会话之间的关系的；
-        kickoutSessionControlFilter.setCacheManager(ehCacheManager());
+        kickoutSessionControlFilter.setRedisManager(redisManager());
         //是否踢出后来登录的，默认是false；即后者登录的用户踢出前者登录的用户；
         kickoutSessionControlFilter.setKickoutAfter(false);
         //同一个用户最大的会话数，默认1；比如2的意思是同一个用户允许最多同时两个人登录；
@@ -445,16 +438,16 @@ public class ShiroConfig {
         //被踢出后重定向到的地址；
         kickoutSessionControlFilter.setKickoutUrl("/login?kickout=1");
         return kickoutSessionControlFilter;
-    }*/
+    }
 
     /**
      * 配置密码比较器
      * @return
      */
-    /*@Bean("credentialsMatcher")
+    @Bean("credentialsMatcher")
     public RetryLimitHashedCredentialsMatcher retryLimitHashedCredentialsMatcher(){
-        RetryLimitHashedCredentialsMatcher retryLimitHashedCredentialsMatcher = new RetryLimitHashedCredentialsMatcher(ehCacheManager());
-
+        RetryLimitHashedCredentialsMatcher retryLimitHashedCredentialsMatcher = new RetryLimitHashedCredentialsMatcher();
+        retryLimitHashedCredentialsMatcher.setRedisManager(redisManager());
         //如果密码加密,可以打开下面配置
         //加密算法的名称
         //retryLimitHashedCredentialsMatcher.setHashAlgorithmName("MD5");
@@ -464,5 +457,5 @@ public class ShiroConfig {
         //retryLimitHashedCredentialsMatcher.setStoredCredentialsHexEncoded(true);
 
         return retryLimitHashedCredentialsMatcher;
-    }*/
+    }
 }

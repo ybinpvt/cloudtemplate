@@ -1,4 +1,4 @@
-package com.ybin.shiroredis.shiro;
+package com.ybin.shiroredis.config.shiro;
 
 import com.ybin.shiroredis.entity.Permission;
 import com.ybin.shiroredis.entity.Role;
@@ -15,7 +15,6 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.util.Set;
 
@@ -27,8 +26,8 @@ import java.util.Set;
  * 在Realm中会直接从我们的数据源中获取Shiro需要的验证信息。可以说，Realm是专用于安全框架的DAO.
  */
 
-@Component
-public class CommonShiroRealm extends AuthorizingRealm {
+//@Component
+public class ShiroRealm extends AuthorizingRealm {
 
     @Autowired
     private UserService userService;
@@ -37,7 +36,7 @@ public class CommonShiroRealm extends AuthorizingRealm {
     @Autowired
     private PermissionService permissionService;
 
-    private Logger logger = LoggerFactory.getLogger(CommonShiroRealm.class);
+    private static Logger logger = LoggerFactory.getLogger(ShiroRealm.class);
 
     /**
      * 大坑！，必须重写此方法，不然Shiro会报错
@@ -79,7 +78,7 @@ public class CommonShiroRealm extends AuthorizingRealm {
             throw new LockedAccountException("账号已被锁定,请联系管理员！");
         }
         //调用 CredentialsMatcher 校验 还需要创建一个类 继承CredentialsMatcher  如果在上面校验了,这个就不需要了
-        //配置自定义权限登录器 参考博客：
+        //配置自定义权限登录器
         SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(user, user.getPassword(), getName());
         return info;
     }
