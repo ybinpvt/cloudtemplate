@@ -1,13 +1,15 @@
 package com.ybin.casserver.service;
 
-import java.util.Map;
+import com.ybin.casserver.model.CasUser;
+
+import java.util.List;
 
 /**
  * @author: wangsaichao
  * @date: 2018/7/19
  * @description:
  */
-public interface UserService {
 
-    Map<String,Object> findByUserName(String userName);
+public interface UserService {
+    List<CasUser> findByUsername(String username);
 }

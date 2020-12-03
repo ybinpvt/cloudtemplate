@@ -56,4 +56,12 @@ public class CustomPasswordEncoder implements PasswordEncoder {
         //比较密码是否相等
         return pass.equals(encodedPassword);
     }
+
+    //生成密码
+    public static void main(String[] args) {
+        CustomPasswordEncoder encoder = new CustomPasswordEncoder();
+        String pass = "admin";
+        String password = encoder.encode(pass);
+        System.out.println(pass + " ==> " + password);
+    }
 }

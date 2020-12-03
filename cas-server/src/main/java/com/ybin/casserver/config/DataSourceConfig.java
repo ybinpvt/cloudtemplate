@@ -1,6 +1,7 @@
 package com.ybin.casserver.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -19,37 +20,28 @@ import java.sql.SQLException;
  */
 
 @Configuration
+@Slf4j
 public class DataSourceConfig {
-    /**
-     * 数据源驱动类型
-     */
+
     @Value("${spring.datasource.driver-class-name}")
     private String driver;
 
-    /**
-     * 连接地址
-     */
     @Value("${spring.datasource.url}")
     private String url;
 
-    /**
-     * 用户名
-     */
     @Value("${spring.datasource.username}")
     private String username;
 
-    /**
-     * 密码
-     */
     @Value("${spring.datasource.password}")
     private String password;
+
 
     /**
      * 配置Druid数据源
      * @return
      * @throws SQLException
      */
-    @Bean(name="dataSource",destroyMethod="close",initMethod ="init")
+    /*@Bean(name="dataSource",destroyMethod="close",initMethod ="init")
     public DataSource dataSource() throws SQLException {
         DruidDataSource dataSource = new DruidDataSource();
         dataSource.setDriverClassName(driver);
@@ -86,5 +78,5 @@ public class DataSourceConfig {
         JdbcTemplate jdbcTemplate = new JdbcTemplate();
         jdbcTemplate.setDataSource(dataSource);
         return jdbcTemplate;
-    }
+    }*/
 }

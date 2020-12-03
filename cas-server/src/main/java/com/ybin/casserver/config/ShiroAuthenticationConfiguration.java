@@ -1,7 +1,6 @@
 package com.ybin.casserver.config;
 
-//import com.ybin.casserver.custom.CustomShiroAuthenticationHandler;
-import com.ybin.casserver.custom.CustomAuthenticationHandler;
+import com.ybin.casserver.custom.ShiroAuthenticationHandler;
 import org.apache.shiro.mgt.DefaultSecurityManager;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apereo.cas.authentication.AuthenticationEventExecutionPlan;
@@ -24,34 +23,9 @@ import org.springframework.context.annotation.Configuration;
  * @description:注册验证器
  */
 
-@Configuration("shiroAuthenticationConfig")
+@Configuration("shiroAuthenticationConfiguration")
 @EnableConfigurationProperties(CasConfigurationProperties.class)
-public class ShiroAuthenticationConfig implements AuthenticationEventExecutionPlanConfigurer {
-    @Autowired
-    private CasConfigurationProperties casProperties;
-
-    @Autowired
-    @Qualifier("servicesManager")
-    private ServicesManager servicesManager;
-
-    /**
-     * 将自定义验证器注册为Bean
-     * @return
-     */
-    @Bean
-    public AuthenticationHandler myAuthenticationHandler() {
-        CustomAuthenticationHandler handler = new CustomAuthenticationHandler(CustomAuthenticationHandler.class.getSimpleName(), servicesManager, new DefaultPrincipalFactory(), 1);
-        return handler;
-    }
-
-    /**
-     * 注册验证器
-     * @param plan
-     */
-    @Override
-    public void configureAuthenticationExecutionPlan(AuthenticationEventExecutionPlan plan) {
-        plan.registerAuthenticationHandler(myAuthenticationHandler());
-    }
+public class ShiroAuthenticationConfiguration implements AuthenticationEventExecutionPlanConfigurer {
     /*@Autowired
     private CasConfigurationProperties casProperties;
 
@@ -90,16 +64,15 @@ public class ShiroAuthenticationConfig implements AuthenticationEventExecutionPl
         return factoryBean;
     }
 
-
     @Bean
     public AuthenticationHandler shiroAuthenticationHandler() {
-        CustomShiroAuthenticationHandler handler = new CustomShiroAuthenticationHandler(CustomShiroAuthenticationHandler.class.getSimpleName(), servicesManager, new DefaultPrincipalFactory(),10);
+        ShiroAuthenticationHandler handler = new ShiroAuthenticationHandler(ShiroAuthenticationHandler.class.getSimpleName(), servicesManager, new DefaultPrincipalFactory(),10);
         return handler;
-    }
+    }*/
 
     @Override
     public void configureAuthenticationExecutionPlan(AuthenticationEventExecutionPlan plan) {
         // TODO Auto-generated method stub
-        plan.registerAuthenticationHandler(shiroAuthenticationHandler());
-    }*/
+        //plan.registerAuthenticationHandler(shiroAuthenticationHandler());
+    }
 }
