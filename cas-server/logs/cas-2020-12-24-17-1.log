@@ -1,0 +1,60 @@
+2020-12-24 17:01:36,089 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:01:51,060 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:03:36,093 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:03:51,064 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:05:36,095 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:05:51,065 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:07:36,096 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:07:51,067 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:09:36,097 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:09:51,068 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:11:36,099 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:11:51,071 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:13:36,103 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:13:51,071 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:15:36,104 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:15:51,071 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:17:36,105 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:17:51,072 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:19:36,106 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:19:51,073 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:21:36,107 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:21:51,074 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:23:36,109 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:23:51,074 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:25:36,109 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:25:51,078 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:27:36,112 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:27:51,079 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:29:36,114 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:29:51,081 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:31:36,115 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:31:51,082 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:33:36,117 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:33:51,083 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:35:36,121 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:35:51,085 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:37:36,123 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:37:51,087 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:39:36,124 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:39:51,088 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:41:36,125 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:41:51,090 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:43:36,127 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:43:51,090 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:45:36,128 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:45:51,091 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:47:36,136 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:47:51,092 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:49:36,138 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:49:51,093 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:51:36,141 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:51:51,094 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:53:36,143 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:53:51,096 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:55:36,145 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:55:51,098 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:57:36,147 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:57:51,099 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>
+2020-12-24 17:59:36,148 INFO [org.apereo.cas.services.AbstractServicesManager] - <Loaded [2] service(s) from [InMemoryServiceRegistry].>
+2020-12-24 17:59:51,100 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>

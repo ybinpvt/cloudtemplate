@@ -71,9 +71,9 @@ public class DataSourceConfig {
         //归还连接时执行validationQuery检测连接是否有效，配置为true会降低性能
         dataSource.setTestOnReturn(false);
         return dataSource;
-    }
+    }*/
 
-    @Bean
+    /*@Bean
     public JdbcTemplate jdbcTemplate(@Qualifier("dataSource") DataSource dataSource){
         JdbcTemplate jdbcTemplate = new JdbcTemplate();
         jdbcTemplate.setDataSource(dataSource);

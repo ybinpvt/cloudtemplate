@@ -23,6 +23,7 @@
         <option value="$PROJECT_DIR$/cas-client-spring-boot/pom.xml" />
         <option value="$PROJECT_DIR$/shiro-demo/pom.xml" />
         <option value="$PROJECT_DIR$/shiro-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/cas-simple/pom.xml" />
       </list>
     </option>
   </component>

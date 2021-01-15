@@ -9,14 +9,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
         <module name="eureka-client-one" />
-        <module name="cas-server" />
-        <module name="cas-client-spring-boot" />
+        <module name="eureka-client-two" />
         <module name="shiro-redis" />
         <module name="cas-client-spring-tradition" />
-        <module name="eureka-client-two" />
+        <module name="cas-server" />
+        <module name="cas-client-two" />
+        <module name="cas-simple" />
         <module name="cas-client-one" />
         <module name="shiro-ehcache" />
-        <module name="cas-client-two" />
+        <module name="cas-client-spring-boot" />
       </profile>
     </annotationProcessing>
   </component>
@@ -27,6 +28,7 @@
       <module name="cas-client-spring-tradition" options="" />
       <module name="cas-client-two" options="" />
       <module name="cas-server" options="" />
+      <module name="cas-simple" options="-parameters" />
       <module name="eureka-client-one" options="-parameters" />
       <module name="eureka-client-two" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
